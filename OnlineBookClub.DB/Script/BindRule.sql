@@ -1,0 +1,1 @@
+﻿ EXEC sys.sp_bindrule @rulename=N'[dbo].[CheckGender]', @objname=N'[dbo].[Gender]' , @futureonly='futureonly'

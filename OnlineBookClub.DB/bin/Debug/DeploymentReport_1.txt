@@ -1,0 +1,52 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [Auth].[Users]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [Auth].[Users].[asdsadsa] on table [Auth].[Users] must be added, but the column has no default value and does
+         not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either:
+         add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+
+** User actions
+     Drop
+       [Event].[CHK_EventParticipants_Rating] (Check Constraint)
+       [Event].[CHK_EventRatings_Rating] (Check Constraint)
+       [Event].[CHK_Events_ISBN] (Check Constraint)
+       [Event].[CHK_EventSubjects] (Check Constraint)
+     Recreate table
+       [Auth].[Users] (Table)
+     Create
+       [Event].[CHK_EventParticipants_Rating] (Check Constraint)
+       [Event].[CHK_EventRatings_Rating] (Check Constraint)
+       [Event].[CHK_Events_ISBN] (Check Constraint)
+       [Event].[CHK_EventSubjects] (Check Constraint)
+
+** Supporting actions
+     Drop
+       [Auth].[DF_Users_IsActive] (Default Constraint)
+       [Auth].[DF_Users_IsDeleted] (Default Constraint)
+       [Auth].[DF_Users_CreatedDate] (Default Constraint)
+       [Auth].[FK_Users_DepartmentID_Departments] (Foreign Key)
+       [Auth].[FK_Users_UserRoleID_UserRoles] (Foreign Key)
+       [Auth].[FK_Users_SchoolID_Schools] (Foreign Key)
+       [Event].[FK_Events_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_Events_ModifiedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_ModifiedUserID_Users] (Foreign Key)
+     Create
+       [Auth].[Users].[IX_Users_SchoolID] (Index)
+       [Auth].[Users].[IX_Users_SchoolNo] (Index)
+       [Auth].[FK_Users_DepartmentID_Departments] (Foreign Key)
+       [Auth].[FK_Users_UserRoleID_UserRoles] (Foreign Key)
+       [Auth].[FK_Users_SchoolID_Schools] (Foreign Key)
+       [Event].[FK_Events_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_Events_ModifiedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_ModifiedUserID_Users] (Foreign Key)
+
+The column [Auth].[Users].[asdsadsa] on table [Auth].[Users] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

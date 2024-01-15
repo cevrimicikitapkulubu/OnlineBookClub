@@ -1,0 +1,74 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [Auth] (Schema)
+       [Const] (Schema)
+       [Event] (Schema)
+       [dbo].[Gender] (User-Defined Data Type)
+       [Auth].[UserRoles] (Table)
+       [Auth].[Users] (Table)
+       [Auth].[Users].[IX_Users_SchoolID] (Index)
+       [Auth].[Users].[IX_Users_SchoolNo] (Index)
+       [Const].[Schools] (Table)
+       [Const].[Districts] (Table)
+       [Const].[Departments] (Table)
+       [Const].[Cities] (Table)
+       [Event].[Locations] (Table)
+       [Event].[EventSubjects] (Table)
+       [Event].[EventSubjects].[UX_EventSubjects_EventID_Question] (Index)
+       [Event].[Events] (Table)
+       [Event].[Events].[IX_Events_StartDate_SchoolID_LocationID] (Index)
+       [Event].[EventRequirements] (Table)
+       [Event].[EventRatings] (Table)
+       [Event].[EventParticipants] (Table)
+       [Event].[EventDetails] (Table)
+       [Auth].[DF_Users_IsActive] (Default Constraint)
+       [Auth].[DF_Users_IsDeleted] (Default Constraint)
+       [Auth].[DF_Users_CreatedDate] (Default Constraint)
+       [Event].[DF_EventSubjects_IsActive] (Default Constraint)
+       [Event].[DF_EventSubjects_IsDeleted] (Default Constraint)
+       [Event].[DF_EventSubjects_CreatedDate] (Default Constraint)
+       [Event].[DF_Events_IsActive] (Default Constraint)
+       [Event].[DF_Events_IsDeleted] (Default Constraint)
+       [Event].[DF_Events_CreatedDate] (Default Constraint)
+       [Event].[DF_EventRequirements_IsActive] (Default Constraint)
+       [Event].[DF_EventRequirements_IsDeleted] (Default Constraint)
+       [Event].[DF_EventRequirements_CreatedDate] (Default Constraint)
+       [Event].[DF_EventRatings_CreatedDate] (Default Constraint)
+       [Event].[DF_EventParticipants_CreatedDate] (Default Constraint)
+       [Auth].[FK_Users_DepartmentID_Departments] (Foreign Key)
+       [Auth].[FK_Users_UserRoleID_UserRoles] (Foreign Key)
+       [Auth].[FK_Users_SchoolID_Schools] (Foreign Key)
+       [Const].[PK_Schools_DistrictID_DistrictID] (Foreign Key)
+       [Const].[FK_Districts_CityID_Cities] (Foreign Key)
+       [Event].[FK_EventSubjects_EventID_Events] (Foreign Key)
+       [Event].[FK_Events_SchoolID_Schools] (Foreign Key)
+       [Event].[FK_Events_LocationID_Locations] (Foreign Key)
+       [Event].[FK_Events_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_Events_ModifiedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_SchoolID_Schools] (Foreign Key)
+       [Event].[FK_EventRequirements_DepartmentID_Departments] (Foreign Key)
+       [Event].[FK_EventRequirements_UserRoleID_UserRoles] (Foreign Key)
+       [Event].[FK_EventRequirements_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_ModifiedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRatings_EventID_Events] (Foreign Key)
+       [Event].[FK_EventParticipants_EventID_Events] (Foreign Key)
+       [Event].[FK_EventDetails_EventID_Events] (Foreign Key)
+       [Event].[CHK_EventSubjects] (Check Constraint)
+       [Event].[CHK_Events_ISBN] (Check Constraint)
+       [Event].[CHK_EventRatings_Rating] (Check Constraint)
+       [Event].[CHK_EventParticipants_Rating] (Check Constraint)
+       [Event].[FN_CheckIfTotalNumberOfQuestionsIsCorrect] (Function)
+       [Event].[CHK_EventSubjects_CheckIfTotalNumberOfQuestionsIsCorrect] (Check Constraint)
+       [dbo].[CheckGender] (Rule)
+
+** Supporting actions

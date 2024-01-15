@@ -1,0 +1,28 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [Auth].[Users].[asdsadsa] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       [Event].[CHK_EventParticipants_Rating] (Check Constraint)
+       [Event].[CHK_EventRatings_Rating] (Check Constraint)
+       [Event].[CHK_Events_ISBN] (Check Constraint)
+       [Event].[CHK_EventSubjects] (Check Constraint)
+     Alter
+       [Auth].[Users] (Table)
+     Create
+       [Event].[CHK_EventParticipants_Rating] (Check Constraint)
+       [Event].[CHK_EventRatings_Rating] (Check Constraint)
+       [Event].[CHK_Events_ISBN] (Check Constraint)
+       [Event].[CHK_EventSubjects] (Check Constraint)
+
+** Supporting actions
+
+The column [Auth].[Users].[asdsadsa] is being dropped, data loss could occur.
+

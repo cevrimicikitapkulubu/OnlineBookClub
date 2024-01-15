@@ -1,0 +1,90 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [Auth].[Users]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [Auth].[Users].[Email] on table [Auth].[Users] must be added, but the column has no default value and does
+         not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either:
+         add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+       The column [Auth].[Users].[PhoneNumber] on table [Auth].[Users] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The column [Auth].[Users].[UserName] on table [Auth].[Users] must be added, but the column has no default value and does
+         not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either:
+         add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+
+** User actions
+     Drop
+       [Event].[CHK_EventRatings_Rating] (Check Constraint)
+       [Event].[CHK_Events_ISBN] (Check Constraint)
+       [Event].[CHK_EventSubjects] (Check Constraint)
+       [Event].[CHK_EventParticipants_Rating] (Check Constraint)
+     Recreate table
+       [Auth].[Users] (Table)
+     Create
+       [Auth].[Users].[UX_Users_PhoneNumber] (Index)
+       [Auth].[Users].[UX_Users_UserName] (Index)
+       [Auth].[Users].[UX_Users_Email] (Index)
+       [Auth].[UserPasswords] (Table)
+       [Auth].[UserSessionHistories] (Table)
+       [Auth].[UserSessionHistories].[UX_UserSessionHistories_Token] (Index)
+       [Auth].[UserSessions] (Table)
+       [Auth].[UserSessions].[UX_UserSessions_Token] (Index)
+       [Auth].[UserVerifications] (Table)
+       [Auth].[UserVerifications].[IX_UserVerifications_GUID_UserID] (Index)
+       [Const].[Achievements] (Table)
+       [Const].[Levels] (Table)
+       [Const].[Ratings] (Table)
+       [Const].[UserAchievements] (Table)
+       [Auth].[DF_UserVerifications_IsConfirmed] (Default Constraint)
+       [Auth].[DF_UserVerifications_CreatedDate] (Default Constraint)
+       [Const].[DF_UserAchievements_CreatedDate] (Default Constraint)
+       [Auth].[FK_Users_Level_Levels] (Foreign Key)
+       [Auth].[FK_UserPasswords_UserID] (Foreign Key)
+       [Auth].[FK_UserSessionHistories_UserID] (Foreign Key)
+       [Auth].[FK_UserSessions_UserID] (Foreign Key)
+       [Auth].[FK_UserVerifications_UserID] (Foreign Key)
+       [Const].[FK_Achievements_Level_Levels] (Foreign Key)
+       [Const].[FK_UserAchievements_ID_Users] (Foreign Key)
+       [Const].[FK_UserAchievements_AchievementID_Achievements] (Foreign Key)
+       [Const].[FK_UserAchievements_EventID_Events] (Foreign Key)
+       [Event].[FK_EventParticipants_Rating_Ratings] (Foreign Key)
+       [Auth].[CHK_Users_PhoneNumber] (Check Constraint)
+       [Event].[CHK_EventRatings_Rating] (Check Constraint)
+       [Event].[CHK_Events_ISBN] (Check Constraint)
+       [Event].[CHK_EventSubjects] (Check Constraint)
+       [Const].[CHK_Ratings_Rate] (Check Constraint)
+
+** Supporting actions
+     Drop
+       [Auth].[DF_Users_IsActive] (Default Constraint)
+       [Auth].[DF_Users_IsDeleted] (Default Constraint)
+       [Auth].[DF_Users_CreatedDate] (Default Constraint)
+       [Event].[FK_Events_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_Events_ModifiedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_ModifiedUserID_Users] (Foreign Key)
+       [Auth].[FK_Users_DepartmentID_Departments] (Foreign Key)
+       [Auth].[FK_Users_UserRoleID_UserRoles] (Foreign Key)
+       [Auth].[FK_Users_SchoolID_Schools] (Foreign Key)
+     Create
+       [Auth].[Users].[IX_Users_SchoolID] (Index)
+       [Auth].[Users].[IX_Users_SchoolNo] (Index)
+       [Event].[FK_Events_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_Events_ModifiedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_CreatedUserID_Users] (Foreign Key)
+       [Event].[FK_EventRequirements_ModifiedUserID_Users] (Foreign Key)
+       [Auth].[FK_Users_DepartmentID_Departments] (Foreign Key)
+       [Auth].[FK_Users_UserRoleID_UserRoles] (Foreign Key)
+       [Auth].[FK_Users_SchoolID_Schools] (Foreign Key)
+
+The column [Auth].[Users].[Email] on table [Auth].[Users] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [Auth].[Users].[PhoneNumber] on table [Auth].[Users] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [Auth].[Users].[UserName] on table [Auth].[Users] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+
