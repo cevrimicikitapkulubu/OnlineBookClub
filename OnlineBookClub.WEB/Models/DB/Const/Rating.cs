@@ -2,5 +2,10 @@
 {
     public class Rating
     {
+        [Key]
+        [Range(1, 5)]
+        public byte Rate { get; set; } = null!;
+
+        public byte Point { get; set; } = null!;
     }
 }
