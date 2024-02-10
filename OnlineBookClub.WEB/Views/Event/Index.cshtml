@@ -1,0 +1,21 @@
+﻿@model Event_IndexVM
+
+<div class="d-flex align-items-center flex-column justify-content-center gap-2" style="margin-top: 150px;">
+    @foreach (var item in Model.Events)
+    {
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <p class="card-text">@item.ISBN</p>
+                        <p class="card-text"><small class="text-body-secondary">@item.CREATED_DATE</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

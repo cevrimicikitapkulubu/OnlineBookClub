@@ -5,6 +5,6 @@ namespace OnlineBookClub.WEB.Models.Identity
 {
     public class AppUser:IdentityUser
     {
-        public virtual UserInfo UserId { get; set; }
+        public virtual UserInfo UserInfoId { get; set; }
     }
 }

@@ -6,6 +6,7 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 {
     public class Event
     {
+        [Key]
         public int Id { get; set; }
 
         [MaxLength(13)]
@@ -35,6 +36,6 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 
         public virtual List<EventParticipants> EventParticipants { get; set; }
         public virtual List<EventRatings> EventRatings { get; set; }
-        public virtual List<EventRequirement> EventRequirements { get; set; }
+        //public virtual List<EventRequirement> EventRequirements { get; set; }
     }
 }
