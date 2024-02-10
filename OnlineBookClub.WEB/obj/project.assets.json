@@ -2014,27 +2014,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LulQu\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\okanc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
+      "projectUniqueName": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
       "projectName": "OnlineBookClub.WEB",
-      "projectPath": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
-      "packagesPath": "C:\\Users\\LulQu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
+      "projectPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
+      "packagesPath": "C:\\Users\\okanc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\LulQu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\okanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2042,7 +2034,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2101,7 +2092,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
