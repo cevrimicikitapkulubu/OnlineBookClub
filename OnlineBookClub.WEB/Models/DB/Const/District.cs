@@ -10,6 +10,7 @@ namespace OnlineBookClub.WEB.Models.DB.Const
         public string Name { get; set; } = null!;
 
         public virtual City City { get; set; } // Navigation Property
+        public virtual List<School> Schools { get; set; }
         public int CityId { get; set; }
     }
 }
