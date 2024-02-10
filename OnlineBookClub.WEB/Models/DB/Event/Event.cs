@@ -31,5 +31,10 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         public int CREATED_USER_ID { get; set; }
         public DateTimeOffset MODIFIED_DATE { get; set; }
         public int MODIFIED_USER_ID { get; set; }
+
+
+        public virtual List<EventParticipants> EventParticipants { get; set; }
+        public virtual List<EventRatings> EventRatings { get; set; }
+        public virtual List<EventRequirement> EventRequirements { get; set; }
     }
 }
