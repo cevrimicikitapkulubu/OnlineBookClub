@@ -4,7 +4,3 @@ C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\bin\Debug\OnlineBoo
 C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\obj\Debug\OnlineBookClub.DB.sqlproj.AssemblyReference.cache
 C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\obj\Debug\OnlineBookClub.DB.dll
 C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\obj\Debug\OnlineBookClub.DB.pdb
-C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\obj\Debug\Model.xml
-C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\obj\Debug\refactor.xml
-C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\obj\Debug\postdeploy.sql
-C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.DB\obj\Debug\predeploy.sql

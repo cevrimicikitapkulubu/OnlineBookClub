@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OnlineBookClub.WEB.props" />
+</Project>
