@@ -1,12 +1,10 @@
-﻿//using Microsoft.EntityFrameworkCore;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace OnlineBookClub.WEB.Models.Identity
+namespace OnlineBookClub.WEB.Models.DB.Auth
 {
-    public class User
+    public class UserInfo
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [MaxLength(48)]
         public string Firstname { get; set; } = null!;

@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using OnlineBookClub.WEB.Models.DB.Auth;
 
 namespace OnlineBookClub.WEB.Models.Identity
 {
     public class AppUser:IdentityUser
     {
-        public string? xyz { get; set; }
+        public virtual UserInfo UserId { get; set; }
     }
 }
