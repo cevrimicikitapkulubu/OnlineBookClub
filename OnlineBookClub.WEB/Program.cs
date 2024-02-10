@@ -1,11 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineBookClub.WEB.Models;
+using OnlineBookClub.WEB.Models.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddDbContext<OnlineBookClubContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MsSqlConnection")));
 builder.Services.AddDbContext<OnlineBookClubContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MsSqlConnection")));
+
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<OnlineBookClubContext>();
 
 var app = builder.Build();
 
