@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using OnlineBookClub.WEB.Enums;
+using OnlineBookClub.WEB.Models.DB.Const;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace OnlineBookClub.WEB.Models.DB.Auth
 {
@@ -10,7 +13,7 @@ namespace OnlineBookClub.WEB.Models.DB.Auth
         public string Firstname { get; set; } = null!;
 
         [MaxLength(48)]
-        public string Surname { get; set; } = null!;
+        public string Lastname { get; set; } = null!;
 
         [MaxLength(24)]
         public string Username { get; set; } = null!;
@@ -19,29 +22,42 @@ namespace OnlineBookClub.WEB.Models.DB.Auth
         public string Email { get; set; } = null!;
 
         [MaxLength(11)]
-        public string Phone { get; set; } = null!;
+        public string PhoneNumber { get; set; } = null!;
 
-        //virtual Department DepartmentID {  get; set; }
+        public Int16 DepartmentId { get; set; }
 
-        //virtual UserRole UserRoleID {  get; set; }
+        public byte UserRoleId { get; set; }
 
-        //Gender Gender { get; set; }
+        //Gender Gender { get; set; } = Gender.E;
 
-        public short SchoolID { get; set; }
+        public short SchoolId { get; set; }
 
         [MaxLength(8)]
         public string? SchoolNo { get; set; }
 
-        public byte? Level { get; set; }
+        public byte? LevelId { get; set; }
 
         public short? Point { get; set; }
 
-        public bool IsActive { get; set; }
+        //?=========> AUDIT COLUMNS
 
-        public bool IsDeleted { get; set; }
+        [DefaultValue(true)]
+        public bool IS_ACTIVE { get; set; }
 
-        public DateTimeOffset CreatedDate { get; set; }
+        [DefaultValue(false)]
+        public bool IS_DELETED { get; set; }
 
-        public DateTimeOffset? ModifiedDate { get; set; }
+        public DateTimeOffset CREATED_DATE { get; set; } = DateTimeOffset.Now;
+
+        public DateTimeOffset? MODIFIED_DATE { get; set; }
+
+        public virtual Department Department { get; set; }
+
+        public virtual UserRole UserRole { get; set; }
+
+        public virtual School School { get; set; }
+
+        public virtual Level Level {  get; set; }
+
     }
 }

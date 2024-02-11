@@ -4,7 +4,8 @@ namespace OnlineBookClub.WEB.Models.DB.Auth
 {
     public class UserPassword
     {
-        public Guid UserId { get; set; }
+        [MaxLength(450)]
+        public string UserId { get; set; }
 
         [MaxLength(256)]
         public string PasswordHash { get; set; } = null!;
