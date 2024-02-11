@@ -25,6 +25,7 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         public int MODIFIED_USER_ID { get; set; }
 
         public virtual School School { get; set; }
+        public virtual Event Event { get; set; }
         public virtual Department Department { get; set; }
         public virtual UserRole UserRole { get; set; }
     }

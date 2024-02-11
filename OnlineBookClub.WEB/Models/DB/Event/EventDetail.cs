@@ -4,9 +4,11 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 {
     public class EventDetail
     {
-        public virtual Event Event { get; set; }
+        public int EventId { get; set; }
 
         [MaxLength(4000)]
         public string Description { get; set; } = null!;
+
+        public virtual Event Event { get; set; }
     }
 }

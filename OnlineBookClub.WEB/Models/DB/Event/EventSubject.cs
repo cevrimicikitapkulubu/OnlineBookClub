@@ -5,7 +5,7 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 {
     public class EventSubject
     {
-        public Event EventId { get; set; }
+        public int EventId { get; set; }
         public byte RowNumber { get; set; }
         [MaxLength(512)]
         public string Question { get; set; }
@@ -18,6 +18,8 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         public int CREATED_USER_ID { get; set; }
         public DateTimeOffset MODIFIED_DATE { get; set; }
         public int MODIFIED_USER_ID { get; set; }
+
+        public virtual Event Event { get; set; }
 
     }
 }

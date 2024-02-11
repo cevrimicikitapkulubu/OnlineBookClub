@@ -6,6 +6,7 @@
         public bool IsOnline { get; set; }
         public string Title { get; set; } = null!;
         public string Description { get; set; } = null!;
-        //public DbGeography? Geography { get; set; } //TİPİ NE OLUCAK
+
+        //public DbGeography Geography { get; set; }  maybe used this pack --> using System.Data.Spatial; 
     }
 }
