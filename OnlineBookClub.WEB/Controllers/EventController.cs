@@ -19,7 +19,7 @@ namespace OnlineBookClub.WEB.Controllers
         {
             Event_IndexVM vm = new Event_IndexVM()
             {
-                Events = context.Events.Include("EventSubjects").ToList()
+                Events = context.Events.Include(x => x.EventSubjects).Include(x => x.Location).ToList(),
             };
 
             return View(vm);

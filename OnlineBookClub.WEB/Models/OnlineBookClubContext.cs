@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using OnlineBookClub.WEB.Models.DB.Auth;
 using OnlineBookClub.WEB.Models.DB.Const;
 using OnlineBookClub.WEB.Models.DB.Event;
 using OnlineBookClub.WEB.Models.Identity;
@@ -11,88 +10,17 @@ namespace OnlineBookClub.WEB.Models
     {
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //!========| AUTH |========
-
-            //? USER INFO
-
-            builder.Entity<UserInfo>()
-                .HasIndex(x => x.Id)
-                .HasFillFactor(100);
-
-            builder.Entity<UserInfo>()
-                .HasCheckConstraint("CHK_Users_PhoneNumber", "PhoneNumber NOT LIKE '%[^0-9]%' AND LEN(PhoneNumber) = 11");
-
-            builder.Entity<UserInfo>()
-                .HasOne(x => x.Department)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction)
-                .HasConstraintName("FK_Users_DepartmentID_Departments");
-
-            builder.Entity<UserInfo>()
-                .HasOne(x => x.UserRole)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
-
-            builder.Entity<UserInfo>()
-                .HasOne(x => x.School)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
-
-            builder.Entity<UserInfo>()
-                .HasOne(x => x.Level)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
-
-            //? USER PASSWORD
-
-            builder.Entity<UserPassword>()
-                .HasIndex(x => x.UserId)
-                .HasFillFactor(100);
-
-            builder.Entity<UserPassword>()
-                .HasOne(x => x.UserId)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
-
-            //? USER SESSION HISTORY
-
-            builder.Entity<UserSessionHistory>()
-                .HasIndex(x => x.UserId)
-                .HasFillFactor(100);
-
-            builder.Entity<UserSessionHistory>()
-                .HasOne(x => x.UserId)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
-
-            //? USER SESSION
-
-            builder.Entity<UserSession>()
-                .HasIndex(x => x.UserId)
-                .HasFillFactor(100);
-
-            builder.Entity<UserSession>()
-                .HasOne(x => x.UserId)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
-
-            //? USER VERIFICATION
-
-            builder.Entity<UserVerification>()
-                .HasIndex(x => x.UserId)
-                .HasFillFactor(100);
-
-            builder.Entity<UserVerification>()
-                .HasOne(x => x.UserId)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
-
 
             //!========| EVENT |========
 
             //? EVENT PARTICIPANT
 
-            builder.Entity<EventParticipants>().HasKey(table => new {
+            builder.Entity<EventParticipant>().HasKey(table => new {
+                table.EventId,
+                table.UserId
+            });
+
+            builder.Entity<EventRating>().HasKey(table => new {
                 table.EventId,
                 table.UserId
             });
@@ -124,10 +52,10 @@ namespace OnlineBookClub.WEB.Models
                 .HasIndex(x => x.Id)
                 .HasFillFactor(70);
 
-            builder.Entity<District>()
-                .HasOne(x => x.City)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
+            //builder.Entity<District>()
+            //    .HasOne(x => x.City)
+            //    .WithMany()
+            //    .OnDelete(DeleteBehavior.NoAction);
 
             //? LEVEL
 
@@ -147,10 +75,10 @@ namespace OnlineBookClub.WEB.Models
                 .HasIndex(x => x.Id)
                 .HasFillFactor(70);
 
-            builder.Entity<School>()
-                .HasOne(x => x.District)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
+            //builder.Entity<School>()
+            //    .HasOne(x => x.District)
+            //    .WithMany()
+            //    .OnDelete(DeleteBehavior.NoAction);
 
 
 
@@ -158,10 +86,7 @@ namespace OnlineBookClub.WEB.Models
         }
 
         public OnlineBookClubContext(DbContextOptions<OnlineBookClubContext> options) : base(options) { }
-
-        //!---------------------| AUTH |---------------------
-
-
+         
 
         //!---------------------| CONST |---------------------
 
@@ -172,12 +97,17 @@ namespace OnlineBookClub.WEB.Models
         public DbSet<Level> Levels { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<School> Schools { get; set; }
-        // UserAchievement Eklenecek
+        public DbSet<UserAchievement> UserAchievements { get; set; }
 
         //!---------------------| EVENT |---------------------
 
         public DbSet<Event> Events { get; set; }
+        public DbSet<EventDetail> EventDetails { get; set; }
+        public DbSet<EventParticipant> EventParticipants { get; set; }
+        public DbSet<EventRating> EventRatings { get; set; }
+        public DbSet<EventRequirement> EventRequirements { get; set; }
         public DbSet<EventSubject> EventSubjects { get; set; }
+        public DbSet<Location> Locations { get; set; }
 
 
     }

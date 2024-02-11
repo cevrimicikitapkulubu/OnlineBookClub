@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineBookClub.WEB.Models;
 
@@ -11,9 +12,10 @@ using OnlineBookClub.WEB.Models;
 namespace OnlineBookClub.WEB.Migrations
 {
     [DbContext(typeof(OnlineBookClubContext))]
-    partial class OnlineBookClubContextModelSnapshot : ModelSnapshot
+    [Migration("20240211153710_CreateDB")]
+    partial class CreateDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -321,8 +323,8 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<DateTimeOffset>("CREATED_DATE")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("CREATED_USER_ID")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CREATED_USER_ID")
+                        .HasColumnType("int");
 
                     b.Property<string>("ISBN")
                         .IsRequired()
@@ -338,11 +340,11 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<int>("LocationId")
                         .HasColumnType("int");
 
-                    b.Property<DateTimeOffset?>("MODIFIED_DATE")
+                    b.Property<DateTimeOffset>("MODIFIED_DATE")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("MODIFIED_USER_ID")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("MODIFIED_USER_ID")
+                        .HasColumnType("int");
 
                     b.Property<short>("SchoolId")
                         .HasColumnType("smallint");
@@ -499,9 +501,8 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<DateTimeOffset>("CREATED_DATE")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("CREATED_USER_ID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CREATED_USER_ID")
+                        .HasColumnType("int");
 
                     b.Property<int>("EventId1")
                         .HasColumnType("int");
@@ -512,11 +513,11 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<bool>("IS_DELETED")
                         .HasColumnType("bit");
 
-                    b.Property<DateTimeOffset?>("MODIFIED_DATE")
+                    b.Property<DateTimeOffset>("MODIFIED_DATE")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("MODIFIED_USER_ID")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("MODIFIED_USER_ID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Question")
                         .IsRequired()
@@ -907,7 +908,7 @@ namespace OnlineBookClub.WEB.Migrations
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventSubject", b =>
                 {
                     b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Event", "Event")
-                        .WithMany("EventSubjects")
+                        .WithMany()
                         .HasForeignKey("EventId1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -960,8 +961,6 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Navigation("EventParticipants");
 
                     b.Navigation("EventRatings");
-
-                    b.Navigation("EventSubjects");
                 });
 #pragma warning restore 612, 618
         }

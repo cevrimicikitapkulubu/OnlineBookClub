@@ -465,6 +465,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\books\\9789944888349-us.jpg",
+      "PackagePath": "staticwebassets\\img\\books\\9789944888349-us.jpg"
+    },
+    {
       "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

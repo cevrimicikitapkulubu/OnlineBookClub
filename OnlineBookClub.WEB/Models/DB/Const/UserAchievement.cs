@@ -24,6 +24,5 @@ namespace OnlineBookClub.WEB.Models.DB.Const
 
         public virtual Achievement Achievement { get; set; }
 
-        public virtual IdentityUser User { get; set; }
     }
 }

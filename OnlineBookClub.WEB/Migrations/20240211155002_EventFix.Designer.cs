@@ -12,8 +12,8 @@ using OnlineBookClub.WEB.Models;
 namespace OnlineBookClub.WEB.Migrations
 {
     [DbContext(typeof(OnlineBookClubContext))]
-    [Migration("20240210192353_EventTableAdd")]
-    partial class EventTableAdd
+    [Migration("20240211155002_EventFix")]
+    partial class EventFix
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -130,69 +130,6 @@ namespace OnlineBookClub.WEB.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Auth.UserInfo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTimeOffset>("CreatedDate")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(320)
-                        .HasColumnType("nvarchar(320)");
-
-                    b.Property<string>("Firstname")
-                        .IsRequired()
-                        .HasMaxLength(48)
-                        .HasColumnType("nvarchar(48)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<byte?>("Level")
-                        .HasColumnType("tinyint");
-
-                    b.Property<DateTimeOffset?>("ModifiedDate")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
-
-                    b.Property<short?>("Point")
-                        .HasColumnType("smallint");
-
-                    b.Property<short>("SchoolID")
-                        .HasColumnType("smallint");
-
-                    b.Property<string>("SchoolNo")
-                        .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasMaxLength(48)
-                        .HasColumnType("nvarchar(48)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasMaxLength(24)
-                        .HasColumnType("nvarchar(24)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("UserInfo");
-                });
-
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Const.Achievement", b =>
                 {
                     b.Property<int>("Id")
@@ -201,8 +138,8 @@ namespace OnlineBookClub.WEB.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("EventCount")
-                        .HasColumnType("int");
+                    b.Property<short?>("EventCount")
+                        .HasColumnType("smallint");
 
                     b.Property<byte>("LevelId")
                         .HasColumnType("tinyint");
@@ -214,6 +151,10 @@ namespace OnlineBookClub.WEB.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Id");
+
+                    SqlServerIndexBuilderExtensions.HasFillFactor(b.HasIndex("Id"), 70);
+
                     b.HasIndex("LevelId");
 
                     b.ToTable("Achievements");
@@ -221,11 +162,11 @@ namespace OnlineBookClub.WEB.Migrations
 
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Const.City", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<short>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("smallint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<short>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -252,19 +193,23 @@ namespace OnlineBookClub.WEB.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Id");
+
+                    SqlServerIndexBuilderExtensions.HasFillFactor(b.HasIndex("Id"), 100);
+
                     b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Const.District", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<short>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("smallint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<short>("Id"), 1L, 1);
 
-                    b.Property<int>("CityId")
-                        .HasColumnType("int");
+                    b.Property<short>("CityId")
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -275,6 +220,10 @@ namespace OnlineBookClub.WEB.Migrations
 
                     b.HasIndex("CityId");
 
+                    b.HasIndex("Id");
+
+                    SqlServerIndexBuilderExtensions.HasFillFactor(b.HasIndex("Id"), 70);
+
                     b.ToTable("Districts");
                 });
 
@@ -283,10 +232,14 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<byte>("LevelId")
                         .HasColumnType("tinyint");
 
-                    b.Property<int>("ExperiencePoint")
-                        .HasColumnType("int");
+                    b.Property<short>("ExperiencePoint")
+                        .HasColumnType("smallint");
 
                     b.HasKey("LevelId");
+
+                    b.HasIndex("LevelId");
+
+                    SqlServerIndexBuilderExtensions.HasFillFactor(b.HasIndex("LevelId"), 70);
 
                     b.ToTable("Levels");
                 });
@@ -301,6 +254,10 @@ namespace OnlineBookClub.WEB.Migrations
 
                     b.HasKey("Rate");
 
+                    b.HasIndex("Rate");
+
+                    SqlServerIndexBuilderExtensions.HasFillFactor(b.HasIndex("Rate"), 70);
+
                     b.ToTable("Ratings");
                 });
 
@@ -312,8 +269,8 @@ namespace OnlineBookClub.WEB.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<short>("Id"), 1L, 1);
 
-                    b.Property<int>("DistrictId")
-                        .HasColumnType("int");
+                    b.Property<short>("DistrictId")
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -324,7 +281,35 @@ namespace OnlineBookClub.WEB.Migrations
 
                     b.HasIndex("DistrictId");
 
+                    b.HasIndex("Id");
+
+                    SqlServerIndexBuilderExtensions.HasFillFactor(b.HasIndex("Id"), 70);
+
                     b.ToTable("Schools");
+                });
+
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Const.UserAchievement", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AchievementId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset>("CREATED_DATE")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("EventId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId");
+
+                    b.HasIndex("AchievementId");
+
+                    b.HasIndex("EventId");
+
+                    b.ToTable("UserAchievements");
                 });
 
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.Event", b =>
@@ -338,8 +323,8 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<DateTimeOffset>("CREATED_DATE")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int>("CREATED_USER_ID")
-                        .HasColumnType("int");
+                    b.Property<string>("CREATED_USER_ID")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
                         .IsRequired()
@@ -355,11 +340,11 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<int>("LocationId")
                         .HasColumnType("int");
 
-                    b.Property<DateTimeOffset>("MODIFIED_DATE")
+                    b.Property<DateTimeOffset?>("MODIFIED_DATE")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int>("MODIFIED_USER_ID")
-                        .HasColumnType("int");
+                    b.Property<string>("MODIFIED_USER_ID")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<short>("SchoolId")
                         .HasColumnType("smallint");
@@ -381,7 +366,30 @@ namespace OnlineBookClub.WEB.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventParticipants", b =>
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventDetail", b =>
+                {
+                    b.Property<int>("EventId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EventId"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.Property<int>("EventId1")
+                        .HasColumnType("int");
+
+                    b.HasKey("EventId");
+
+                    b.HasIndex("EventId1");
+
+                    b.ToTable("EventDetails");
+                });
+
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventParticipant", b =>
                 {
                     b.Property<int>("EventId")
                         .HasColumnType("int");
@@ -410,13 +418,13 @@ namespace OnlineBookClub.WEB.Migrations
                     b.ToTable("EventParticipants");
                 });
 
-            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventRatings", b =>
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventRating", b =>
                 {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("EventId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"), 1L, 1);
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.Property<DateTimeOffset>("CREATED_DATE")
                         .HasColumnType("datetimeoffset");
@@ -425,17 +433,105 @@ namespace OnlineBookClub.WEB.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EventId")
-                        .HasColumnType("int");
-
                     b.Property<short>("Rating")
                         .HasColumnType("smallint");
 
-                    b.HasKey("UserId");
-
-                    b.HasIndex("EventId");
+                    b.HasKey("EventId", "UserId");
 
                     b.ToTable("EventRatings");
+                });
+
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventRequirement", b =>
+                {
+                    b.Property<int>("EventId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EventId"), 1L, 1);
+
+                    b.Property<DateTimeOffset>("CREATED_DATE")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("CREATED_USER_ID")
+                        .HasColumnType("int");
+
+                    b.Property<short>("DepartmentId")
+                        .HasColumnType("smallint");
+
+                    b.Property<int>("EventId1")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IS_ACTIVE")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IS_DELETED")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset>("MODIFIED_DATE")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("MODIFIED_USER_ID")
+                        .HasColumnType("int");
+
+                    b.Property<short>("SchoolId")
+                        .HasColumnType("smallint");
+
+                    b.Property<byte>("UserRoleId")
+                        .HasColumnType("tinyint");
+
+                    b.HasKey("EventId");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("EventId1");
+
+                    b.HasIndex("SchoolId");
+
+                    b.ToTable("EventRequirements");
+                });
+
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventSubject", b =>
+                {
+                    b.Property<int>("EventId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EventId"), 1L, 1);
+
+                    b.Property<DateTimeOffset>("CREATED_DATE")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("CREATED_USER_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventId1")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IS_ACTIVE")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IS_DELETED")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset>("MODIFIED_DATE")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("MODIFIED_USER_ID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Question")
+                        .IsRequired()
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
+
+                    b.Property<byte>("RowNumber")
+                        .HasColumnType("tinyint");
+
+                    b.HasKey("EventId");
+
+                    b.HasIndex("EventId1");
+
+                    b.ToTable("EventSubjects");
                 });
 
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.Location", b =>
@@ -459,7 +555,7 @@ namespace OnlineBookClub.WEB.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Location");
+                    b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("OnlineBookClub.WEB.Models.Identity.AppRole", b =>
@@ -467,9 +563,27 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<DateTimeOffset?>("CREATED_DATE")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int?>("CREATED_USER_ID")
+                        .HasColumnType("int");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IS_ACTIVE")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IS_DELETED")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("MODIFIED_DATE")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int?>("MODIFIED_USER_ID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasMaxLength(256)
@@ -478,9 +592,6 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<string>("NormalizedName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("xyz")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -500,9 +611,15 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<DateTimeOffset>("CREATED_DATE")
+                        .HasColumnType("datetimeoffset");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<short>("DepartmentId")
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -511,10 +628,35 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Firstname")
+                        .IsRequired()
+                        .HasMaxLength(48)
+                        .HasColumnType("nvarchar(48)");
+
+                    b.Property<bool>("Gender")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IS_ACTIVE")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IS_DELETED")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Lastname")
+                        .IsRequired()
+                        .HasMaxLength(48)
+                        .HasColumnType("nvarchar(48)");
+
+                    b.Property<byte?>("LevelId")
+                        .HasColumnType("tinyint");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<DateTimeOffset?>("MODIFIED_DATE")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("NormalizedEmail")
@@ -534,20 +676,31 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<short?>("Point")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("SchoolId")
+                        .HasColumnType("smallint");
+
+                    b.Property<string>("SchoolNo")
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<int>("UserIdId")
-                        .HasColumnType("int");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("LevelId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -557,7 +710,7 @@ namespace OnlineBookClub.WEB.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.HasIndex("UserIdId");
+                    b.HasIndex("SchoolId");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -646,6 +799,25 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Navigation("District");
                 });
 
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Const.UserAchievement", b =>
+                {
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Const.Achievement", "Achievement")
+                        .WithMany()
+                        .HasForeignKey("AchievementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Achievement");
+
+                    b.Navigation("Event");
+                });
+
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.Event", b =>
                 {
                     b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Location", "Location")
@@ -665,7 +837,18 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Navigation("School");
                 });
 
-            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventParticipants", b =>
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventDetail", b =>
+                {
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
+                });
+
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventParticipant", b =>
                 {
                     b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Event", "Event")
                         .WithMany("EventParticipants")
@@ -684,7 +867,7 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Navigation("Rating");
                 });
 
-            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventRatings", b =>
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventRating", b =>
                 {
                     b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Event", "Event")
                         .WithMany("EventRatings")
@@ -695,15 +878,67 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Navigation("Event");
                 });
 
-            modelBuilder.Entity("OnlineBookClub.WEB.Models.Identity.AppUser", b =>
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventRequirement", b =>
                 {
-                    b.HasOne("OnlineBookClub.WEB.Models.DB.Auth.UserInfo", "UserId")
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Const.Department", "Department")
                         .WithMany()
-                        .HasForeignKey("UserIdId")
+                        .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("UserId");
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Const.School", "School")
+                        .WithMany()
+                        .HasForeignKey("SchoolId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Department");
+
+                    b.Navigation("Event");
+
+                    b.Navigation("School");
+                });
+
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Event.EventSubject", b =>
+                {
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Event.Event", "Event")
+                        .WithMany("EventSubjects")
+                        .HasForeignKey("EventId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
+                });
+
+            modelBuilder.Entity("OnlineBookClub.WEB.Models.Identity.AppUser", b =>
+                {
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Const.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Const.Level", "Level")
+                        .WithMany()
+                        .HasForeignKey("LevelId");
+
+                    b.HasOne("OnlineBookClub.WEB.Models.DB.Const.School", "School")
+                        .WithMany()
+                        .HasForeignKey("SchoolId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Department");
+
+                    b.Navigation("Level");
+
+                    b.Navigation("School");
                 });
 
             modelBuilder.Entity("OnlineBookClub.WEB.Models.DB.Const.City", b =>
@@ -726,6 +961,8 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Navigation("EventParticipants");
 
                     b.Navigation("EventRatings");
+
+                    b.Navigation("EventSubjects");
                 });
 #pragma warning restore 612, 618
         }

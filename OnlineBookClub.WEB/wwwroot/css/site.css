@@ -16,3 +16,255 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.guide-item {
+  margin-top: 2rem;
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+}
+
+.item-image > img {
+  width: 350px;
+  height: 350px;
+}
+
+.item-creator{
+  color: gray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.item-notify-date{
+  line-height: 10px;
+}
+
+.item-footer {
+  display: flex;
+  gap: 5%;
+}
+
+.item-discussion-button{
+  padding: 8px 12px;
+  background-color: rgb(102, 101, 102);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.item-discussion-button:hover{
+  background-color: rgb(53, 53, 53);
+  transition: background-color .3s ease-in-out;
+}
+
+
+.item-point i {
+  margin-right: 10px;
+}
+
+.item-point{
+  padding: 8px 12px;
+}
+
+/* Details */
+.details-page{
+  margin-top: 10%;
+}
+
+.book{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  width: 75%;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.book-creator{
+  color: gray;
+}
+
+.book-button{
+  display: flex;
+}
+
+.book-discussion-button {
+  padding: 10px 25px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+}
+
+.book-event-details {
+  padding: 10px 25px;
+  line-height: 10px;
+}
+
+.soon-events-header {
+  color: white;
+  text-align: center;
+}
+
+.soon-event-header{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.soon-events{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #00396F;
+  padding: 30px 0;
+}
+
+.events{
+  display: flex;
+  gap: 6%;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.event{
+  background-color:#7a0000;
+  width: 500px;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.event-header{
+  font-size: 1.2rem;
+  display: flex;
+  gap: 35%;  /* Başa ve sona tutturmayı yapamadığım için bu şekilde geçtim*/
+}
+
+.event-date{
+  text-align: center;
+}
+
+.discussion-button{
+  text-align: center;
+  padding: 8px 35px;
+  background-color: red;
+  border-radius: 20px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+.creator-title{
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.creator-name{
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 45px;
+}
+
+.creator-books{
+  display: flex;
+}
+
+.creator-book {
+  width: 33.3%;
+  height: 512px;
+  text-align: center;
+}
+
+.creator-book .book-image img {
+  width: 250px;
+  height: 412px;
+}
+
+.creator-book .book-label{
+  margin: 0 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.creator-info {
+  color: gray;
+}
+
+.creator-pages{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.creator-pages i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: red;
+}
+
+.creator-pages .selected {
+  color: red;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.subscribe-section{
+  background-color: #00396F;
+  color: white;
+  padding: 30px 0;
+  margin-bottom: 60px;
+}
+
+.subsicribe-text{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.email-subscribe-button{
+  display: flex;
+  justify-content: center;
+}
+
+.email-subscribe-button textarea {
+  border: 1px solid #cfcfcf;
+  width: 400px;
+  height: 50px;
+  padding: 10px 20px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+#email:focus-visible {
+  border: none;
+}
+
+.subscribe-button{
+  padding: 13px 21px;
+  background-color: red;
+  border-radius: 30px;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  font-size: 1rem;
+  left: 59%;
+  cursor: pointer;
+}

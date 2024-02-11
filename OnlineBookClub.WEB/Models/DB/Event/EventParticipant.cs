@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace OnlineBookClub.WEB.Models.DB.Event
 {
-    public class EventParticipants
+    public class EventParticipant
     {
         [Key]
         public int EventId { get; set; }
@@ -19,6 +19,7 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         public DateTimeOffset CREATED_DATE { get; set; } = DateTimeOffset.Now;
         public DateTimeOffset MODIFIED_DATE { get; set; }
 
+        //?=========> REFERANCES
 
         public virtual Event Event { get; set; }
         public virtual Rating Rating { get; set; }
