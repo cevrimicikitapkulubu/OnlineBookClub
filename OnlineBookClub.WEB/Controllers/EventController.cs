@@ -17,12 +17,19 @@ namespace OnlineBookClub.WEB.Controllers
 
         public IActionResult Index()
         {
-            Event_IndexVM vm = new Event_IndexVM()
+            Event_IndexVM model = new Event_IndexVM()
             {
                 Events = context.Events.Include(x => x.EventSubjects).Include(x => x.Location).ToList(),
             };
 
-            return View(vm);
+            return View(model);
+        }
+
+        public IActionResult Details(int id)
+        {
+            Event? _event = context.Events.Where(x=>x.Id == id).Include(x => x.EventSubjects).Include(x => x.Location).FirstOrDefault();
+
+            return View(_event);
         }
     }
 }

@@ -72,3 +72,15 @@ C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.WEB\bin\Debug\net6.0\M
 C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.WEB\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.WEB\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.WEB\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.csproj.AssemblyReference.cache
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.AssemblyInfoInputs.cache
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.AssemblyInfo.cs
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.csproj.CoreCompileInputs.cache
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.RazorAssemblyInfo.cache
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.RazorAssemblyInfo.cs
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.sourcelink.json
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.dll
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\refint\OnlineBookClub.WEB.dll
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.pdb
