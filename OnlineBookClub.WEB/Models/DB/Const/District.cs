@@ -4,13 +4,17 @@ namespace OnlineBookClub.WEB.Models.DB.Const
 {
     public class District
     {
-        public int Id { get; set; } // Id - DistrictsId
+        public Int16 Id { get; set; }
 
         [MaxLength(32)]
         public string Name { get; set; } = null!;
 
-        public virtual City City { get; set; } // Navigation Property
+        public Int16 CityId { get; set; }
+
+        //?=========> REFERANCES
+
+        public virtual City City { get; set; }
+
         public virtual List<School> Schools { get; set; }
-        public int CityId { get; set; }
     }
 }

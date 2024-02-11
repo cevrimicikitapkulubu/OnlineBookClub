@@ -7,8 +7,14 @@ namespace OnlineBookClub.WEB.Models.DB.Const
         public int Id { get; set; }
 
         [MaxLength(16)]
-        public string Title { get; set; }
-        public int EventCount { get; set; }
+        public string Title { get; set; } = null!;
+
+        public Int16? EventCount { get; set; }
+
+        public byte LevelId { get; set; }
+
+        //?=========> REFERANCES
+
         public virtual Level Level { get; set; }
     }
 }

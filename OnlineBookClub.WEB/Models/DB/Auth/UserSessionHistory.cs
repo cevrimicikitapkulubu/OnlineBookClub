@@ -3,17 +3,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace OnlineBookClub.WEB.Models.DB.Auth
 {
-    public class UserPassword
+    public class UserSessionHistory
     {
         [Key]
         [MaxLength(450)]
         public string UserId { get; set; } = null!;
 
-        [MaxLength(256)]
-        public string PasswordHash { get; set; } = null!;
+        public string Token { get; set; } = null!;
 
-        [MaxLength(256)]
-        public string PasswordSalt { get; set; } = null!;
+        [MaxLength(15)]
+        public string IPAddress { get; set; } = null!;
+
+        public bool IsLogin { get; set; }
 
         //?=========> REFERANCES
 

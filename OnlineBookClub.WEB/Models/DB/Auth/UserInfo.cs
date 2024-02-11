@@ -47,9 +47,11 @@ namespace OnlineBookClub.WEB.Models.DB.Auth
         [DefaultValue(false)]
         public bool IS_DELETED { get; set; }
 
-        public DateTimeOffset CREATED_DATE { get; set; } = DateTimeOffset.Now;
+        public DateTimeOffset CREATED_DATE { get; set; } = DateTimeOffset.UtcNow;
 
         public DateTimeOffset? MODIFIED_DATE { get; set; }
+
+        //?=========> REFERANCES
 
         public virtual Department Department { get; set; }
 

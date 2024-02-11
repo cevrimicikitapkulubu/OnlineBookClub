@@ -4,9 +4,9 @@ namespace OnlineBookClub.WEB.Models.DB.Const
 {
     public class Department
     {
-        public short Id { get; set; }
+        public Int16 Id { get; set; }
 
         [MaxLength(48)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
     }
 }
