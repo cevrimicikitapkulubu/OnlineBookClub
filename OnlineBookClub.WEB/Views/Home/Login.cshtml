@@ -6,31 +6,80 @@
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }
 
-<main class="row mt-5">
-    <div class="col-md-4 offset-md-4">
+<main class="container">
+    <div class="Left-Main mt-5">
+        <div class="Left-Main-Up">
+            <div class="Title">
+                <p>Giriş</p>
+                <div class="Line"></div>
+            </div>
+            <h2>Kullanıcı Girişi</h2>
+        </div>
+
 
         <div asp-validation-summary=ModelOnly class="alert alert-danger" role="alert"></div>
 
         <form asp-controller="Home" asp-action="LogIn" asp-route-returnUrl="@Context.Request.Query["returnUrl"]" method="post">
-            <h1 class="h3 mb-3 fw-normal">Giriş</h1>
 
-            <div class="form-floating my-2">
-                <input class="form-control" value="suspectcrow0@gmail.com" asp-for="Email" placeholder="name@example.com">
-                <label asp-for="Email"></label>
-                <span class="text-danger" asp-validation-for="Email"></span>
-            </div>
-            <div class="form-floating my-2">
-                <input class="form-control" value="ExamplePass123*" asp-for="Password" placeholder="Password">
-                <label asp-for="Password"></label>
-                <span class="text-danger" asp-validation-for="Password"></span>
+            <div class="Inputs" style="margin-top: 20%; width: 450px;">
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form2Example1" class="form-control p-3" asp-for="Email" placeholder="E-Mail" />
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="form2Example2" class="form-control p-3" asp-for="Password" placeholder="Şifre" />
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+
+                    <div class="mb-3 form-check" style="margin-left: 20px;">
+                        <input class="form-check-input" asp-for="RememberMe">
+                        <label class="form-check-label" asp-for="RememberMe"></label>
+                    </div>
+
+                    <div class="col d-flex justify-content-center" style="gap: 26%;">
+                        <label> Yardıma mı ithiyacın var? </label>
+                        <a asp-controller="Home" asp-action="ForgetPassword">Şifremi unuttum</a>
+                    </div>
+
+                </div>
+
+                <!-- Submit button -->
+                <div class="Form-Button">
+                    <a href="">
+                        <button type="submit">Giriş Yap</button>
+                    </a>
+                </div>
+                <!-- Submit button -->
+
+
+                <div class="Form-Under">
+                    <div class="Form-Under-Label">
+                        <p>Hesabın yok mu?</p>
+                        <a asp-controller="Home" asp-action="SignUp">Kayıt Ol</a>
+                    </div>
+
+                    <div class="Form-Under-Label">
+                        <p>Sorun çözülmedi mi?</p>
+                        <a href="#">Destek iste</a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="form-check text-start my-3">
-                <input class="form-check-input" asp-for="RememberMe">
-                <label class="form-check-label user-select-none" asp-for="RememberMe"></label>
-            </div>
-            <button class="btn btn-primary w-100 py-2" type="submit">Giriş Yap</button>
-            <a class="float-end" asp-controller="Home" asp-action="ForgetPassword">Şifremi Unuttum</a>
         </form>
+    </div>
+
+    <div class="Main-Middle-Line"></div>
+
+
+    <div class="Right-Main">
+        <img src="~/img/styleImages/Login-Image.png" alt="" srcset="">
     </div>
 </main>

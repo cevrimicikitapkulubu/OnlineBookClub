@@ -17,31 +17,31 @@ namespace OnlineBookClub.WEB.ViewModels.Auth
         }
 
         [DisplayName("Username")]
-        [Required(ErrorMessage = "The 'Username' cannot be left empty.")]
-        [MaxLength(100)]
+        [Required(ErrorMessage = "'Kullanıcı Adı' alanı boş bırakılamaz.")]
+        [MaxLength(100,ErrorMessage ="'Kullanıcı Adı' alanı en fazla '100' karakter olabilir.")]
         public string UserName { get; set; }
 
         [DisplayName("Email")]
-        [Required(ErrorMessage = "The 'Email' cannot be left empty.")]
-        [EmailAddress(ErrorMessage = "The Email you entered is incorrect!")]
+        [Required(ErrorMessage = "'Email' alanı boş bırakılamaz.")]
+        [EmailAddress(ErrorMessage = "Email formatı yanlış.")]
         public string Email { get; set; }
 
         [DisplayName("Phone")]
-        [MaxLength(11)]
-        [Required(ErrorMessage = "The 'Phone' cannot be left empty.")]
+        [MaxLength(11,ErrorMessage ="'Telefon Numarası' alanı en fazla '11' karakter uzunluğunda olabilir.")]
+        [Required(ErrorMessage = "'Telefon Numarası' alanı boş bırakılamaz.")]
         [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
 
         [DisplayName("New Password")]
-        [Required(ErrorMessage = "The 'Password' cannot be left empty.")]
-        [MinLength(10, ErrorMessage = "Your password must be a minimum of 10 characters.")]
+        [Required(ErrorMessage = "'Şifre' alanı boş bırakılamaz.")]
+        [MinLength(10, ErrorMessage = "Şifre uzunluğu en az '10' karakter olmalıdır.")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
         [DisplayName("New Password Confirm")]
-        [Required(ErrorMessage = "The 'Password Confirm' cannot be left empty.")]
-        [Compare(nameof(Password), ErrorMessage = "The Passwords you entered do not match.")]
-        [MinLength(10, ErrorMessage = "Your password must be a minimum of 10 characters.")]
+        [Required(ErrorMessage = "'Tekrar Şifre' alanı boş bırakılamaz.")]
+        [Compare(nameof(Password), ErrorMessage = "Girdiğiniz şifreler uyuşmuyor.")]
+        [MinLength(10, ErrorMessage = "Şifre uzunluğu en az '10' karakter olmalıdır.")]
         [DataType(DataType.Password)]
         public string PasswordConfirm { get; set; }
 

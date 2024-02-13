@@ -7,9 +7,16 @@
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }
 
-<div class="form-signin m-auto col-6">
-    <form asp-action="SignUp" method="post" class="d-flex flex-column gap-3 justify-content-center">
-        <h1 class="h3 mb-3 fw-normal">Sign-Up</h1>
+
+<main class="container">
+    <div class="Left-Main mt-5">
+        <div class="Left-Main-Up">
+            <div class="Title">
+                <p>Kayıt Ol</p>
+                <div class="Line"></div>
+            </div>
+            <h2>Kullanıcı Kayıtı</h2>
+        </div>
 
         @if (TempData["SuccessMessage"] != null)
         {
@@ -25,34 +32,76 @@
             </div>
         }
 
-        <div asp-validation-summary=ModelOnly class="alert alert-danger" role="alert"></div>
+        <form asp-action="SignUp" method="post">
 
-        <div class="form-floating">
-            <input class="form-control" asp-for="UserName" placeholder="Username">
-            <label asp-for="UserName"></label>
-            <span class="text-danger" asp-validation-for="UserName"></span>
-        </div>
-        <div class="form-floating">
-            <input class="form-control" asp-for="Email" placeholder="name@example.com">
-            <label asp-for="Email"></label>
-            <span class="text-danger" asp-validation-for="Email"></span>
-        </div>
-        <div class="form-floating">
-            <input class="form-control" asp-for="Phone" placeholder="Phone Number">
-            <label asp-for="Phone"></label>
-            <span class="text-danger" asp-validation-for="Phone"></span>
-        </div>
-        <div class="form-floating">
-            <input class="form-control" asp-for="Password" placeholder="Password">
-            <label asp-for="Password"></label>
-            <span class="text-danger" asp-validation-for="Password"></span>
-        </div>
-        <div class="form-floating">
-            <input class="form-control" asp-for="PasswordConfirm" placeholder="Password Confirm">
-            <label asp-for="PasswordConfirm"></label>
-            <span class="text-danger" asp-validation-for="PasswordConfirm"></span>
-        </div>
+            <div class="Inputs" style="margin-top: 10%; width: 450px;">
 
-        <button class="btn btn-primary w-100 py-2" type="submit">Sign-Up</button>
-    </form>
-</div>
+                <div asp-validation-summary=ModelOnly class="alert alert-danger" role="alert"></div>
+
+                <!-- Username input -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="text" class="form-control p-3" placeholder="Kullanıcı Adı" asp-for="UserName" />
+                    <span class="text-danger" asp-validation-for="UserName"></span>
+                </div>
+
+                <!-- Phonenumber input -->
+                <div class="form-outline mb-4">
+                    <input type="number" id="number" class="form-control p-3" placeholder="Telefon Numarası" asp-for="Phone" />
+                    <span class="text-danger" asp-validation-for="Phone"></span>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control p-3" placeholder="E-Mail" asp-for="Email" />
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="password" class="form-control p-3" placeholder="Şifre" asp-for="Password" />
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+
+                <!-- Password Confirm input -->
+                <div class="form-outline mb-4"> 
+                    <input type="password" id="passwordConfirm" class="form-control p-3" placeholder="Şifre Tekrar" placeholder="Password Confirm" asp-for="PasswordConfirm" />
+                    <span class="text-danger" asp-validation-for="PasswordConfirm"></span>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                    <div class="col d-flex justify-content-center" style="gap: 26%;">
+                        <label> Bir hesabın var mı?</label>
+                        <a asp-controller="Home" asp-action="Login">Giriş yap</a>
+                    </div>
+
+                </div>
+
+                <!-- Submit button -->
+                <div class="Form-Button">
+                    <a href="">
+                        <button type="submit">Kayıt Ol</button>
+                    </a>
+                </div>
+                <!-- Submit button -->
+
+
+                <div class="Form-Under">
+                    <div class="Form-Under-Label">
+                        <p>Sorun çözülmedi mi?</p>
+                        <a href="#">Destek iste</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+    <div class="Main-Middle-Line"></div>
+
+
+    <div class="Right-Main">
+        <img src="~/img/styleImages/SignUp-Image.png" alt="" srcset="">
+    </div>
+</main>

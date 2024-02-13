@@ -14,6 +14,15 @@ namespace AspNetCoreIdentityApp.Localizations
             //return base.DuplicateUserName(userName);
         }
 
+        public override IdentityError DuplicateEmail(string email)
+        {
+            return new()
+            {
+                Code = "DuplicateEmail",
+                Description = $"Email '{email}' başka birisi tarafından kullanımda"
+            };
+        }
+
         public override IdentityError PasswordTooShort(int length)
         {
             return new()
@@ -39,9 +48,10 @@ namespace AspNetCoreIdentityApp.Localizations
             return new()
             {
                 Code = "PasswordRequiresNonAlphanumeric",
-                Description = "Şifreniz en az 1 Alfabetik Olmayan (! # & *) karakter içermeli."
+                Description = "Şifreniz en az 1 Alfabetik Olmayan (! # & *...) karakter içermeli."
             };
             //return base.PasswordRequiresNonAlphanumeric();
         }
+
     }
 }

@@ -28,7 +28,7 @@ namespace OnlineBookClub.WEB.ViewModels.Auth
 
         [DisplayName("E-Posta")]
         [Required(ErrorMessage = "'E-Posta' boş bırakılamaz.")]
-        [EmailAddress(ErrorMessage = "The Email you entered is incorrect!")]
+        [EmailAddress(ErrorMessage = "Email formatı yanlış.")]
         public string Email { get; set; } = null!;
 
         [DisplayName("Telefon Numarası")]

@@ -14,17 +14,17 @@ namespace OnlineBookClub.WEB.ViewModels.Auth
         }
 
         [DisplayName("Email")]
-        [Required(ErrorMessage = "The 'Email' cannot be left empty.")]
-        [EmailAddress(ErrorMessage = "The Email you entered is incorrect!")]
+        [Required(ErrorMessage = "'Email' alanı boş bırakılamaz.")]
+        [EmailAddress(ErrorMessage = "Email formatı yanlış.")]
         public string Email { get; set; }
 
         [DisplayName("Password")]
-        [Required(ErrorMessage = "The 'Password' cannot be left empty.")]
-        [MinLength(10, ErrorMessage = "Your password must be a minimum of 10 characters.")]
+        [Required(ErrorMessage = "'Şifre' alanı boş bırakılamaz.")]
+        [MinLength(10, ErrorMessage = "Şifre uzunluğu en az '10' karakter olmalıdır.")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [DisplayName("Remember Me")]
+        [DisplayName("Beni Hatırla")]
         public bool RememberMe { get; set; }
     }
 }
