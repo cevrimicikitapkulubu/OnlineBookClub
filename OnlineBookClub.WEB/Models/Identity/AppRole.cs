@@ -8,10 +8,10 @@ namespace OnlineBookClub.WEB.Models.Identity
         //!-- AUDIT COLUMNS
 
         [DefaultValue(true)]
-        public bool IS_ACTIVE { get; set; }
+        public bool? IS_ACTIVE { get; set; }
 
         [DefaultValue(false)]
-        public bool IS_DELETED { get; set; }
+        public bool? IS_DELETED { get; set; }
 
         public DateTimeOffset? CREATED_DATE { get; set; } = DateTimeOffset.UtcNow;
 

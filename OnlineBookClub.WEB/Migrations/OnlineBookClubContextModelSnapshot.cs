@@ -572,10 +572,10 @@ namespace OnlineBookClub.WEB.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IS_ACTIVE")
+                    b.Property<bool?>("IS_ACTIVE")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IS_DELETED")
+                    b.Property<bool?>("IS_DELETED")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("MODIFIED_DATE")
@@ -610,14 +610,14 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<DateTimeOffset>("CREATED_DATE")
+                    b.Property<DateTimeOffset?>("CREATED_DATE")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<short>("DepartmentId")
+                    b.Property<short?>("DepartmentId")
                         .HasColumnType("smallint");
 
                     b.Property<string>("Email")
@@ -628,21 +628,19 @@ namespace OnlineBookClub.WEB.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Firstname")
-                        .IsRequired()
                         .HasMaxLength(48)
                         .HasColumnType("nvarchar(48)");
 
-                    b.Property<bool>("Gender")
+                    b.Property<bool?>("Gender")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IS_ACTIVE")
+                    b.Property<bool?>("IS_ACTIVE")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IS_DELETED")
+                    b.Property<bool?>("IS_DELETED")
                         .HasColumnType("bit");
 
                     b.Property<string>("Lastname")
-                        .IsRequired()
                         .HasMaxLength(48)
                         .HasColumnType("nvarchar(48)");
 
@@ -678,7 +676,11 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<short?>("Point")
                         .HasColumnType("smallint");
 
-                    b.Property<short>("SchoolId")
+                    b.Property<string>("ProfilePicture")
+                        .HasMaxLength(78)
+                        .HasColumnType("nvarchar(78)");
+
+                    b.Property<short?>("SchoolId")
                         .HasColumnType("smallint");
 
                     b.Property<string>("SchoolNo")
@@ -919,9 +921,7 @@ namespace OnlineBookClub.WEB.Migrations
                 {
                     b.HasOne("OnlineBookClub.WEB.Models.DB.Const.Department", "Department")
                         .WithMany()
-                        .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DepartmentId");
 
                     b.HasOne("OnlineBookClub.WEB.Models.DB.Const.Level", "Level")
                         .WithMany()
@@ -929,9 +929,7 @@ namespace OnlineBookClub.WEB.Migrations
 
                     b.HasOne("OnlineBookClub.WEB.Models.DB.Const.School", "School")
                         .WithMany()
-                        .HasForeignKey("SchoolId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SchoolId");
 
                     b.Navigation("Department");
 

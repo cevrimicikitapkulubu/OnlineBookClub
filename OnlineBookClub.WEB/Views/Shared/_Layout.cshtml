@@ -28,7 +28,7 @@
 </head>
 <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
+    @* <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
             <h1 class="logo"><a href="index.html">Multi</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
@@ -75,11 +75,14 @@
             </nav>
             <!-- .navbar -->
         </div>
-    </header>
+    </header> *@
+
+    <partial name="_Navbar" />
+
     <!-- End Header -->
 
     <div>
-        <main role="main" class="pb-3">
+        <main role="main" class="py-4">
             @RenderBody()
         </main>
     </div>
