@@ -10862,19 +10862,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bedir\\.nuget\\packages\\": {}
+    "C:\\Users\\okanc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bedir\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
+      "projectUniqueName": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
       "projectName": "OnlineBookClub.WEB",
-      "projectPath": "C:\\Users\\bedir\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
-      "packagesPath": "C:\\Users\\bedir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bedir\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
+      "projectPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
+      "packagesPath": "C:\\Users\\okanc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bedir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\okanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10948,7 +10948,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
