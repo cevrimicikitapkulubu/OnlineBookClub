@@ -1,19 +1,39 @@
 ﻿@model Event_IndexVM
-
+<div class="slide" style="margin-top: 100px">
+    <div class="container d-flex">
+        <div class="slide-texts">
+            <h1 class="slide-text-header bold">Şuana Kadar Hazırlanmış Bir Çok Etkinlik</h1>
+            <p class="slide-text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor at, beatae consequuntur cupiditate, nisi
+                fuga libero sint repudiandae eius quae ex laborum! Rem minus non aperiam nostrum voluptates? Hic,
+                cumque.</p>
+        </div>
+        <div class="slide-image">
+            <img src="https://cdn.discordapp.com/attachments/1205968232494800897/1206977027761115239/slide.png?ex=65ddf7f3&is=65cb82f3&hm=6fefe5b10f69e50b2e89591ab8c0ea9b5c4d6b0692d256360f6b0cfa0e5b2848&" alt="">
+        </div>
+    </div>
+</div>
+<div class="filter">
+    <select name="event-filters" id="event-filters">
+        <option value="january">Ocak 2023</option>
+        <option value="february">Şubat 2023</option>
+        <option value="march">Mart 2023</option>
+        <option value="april">Nisan 2023</option>
+    </select>
+</div>
 @{
     int i = 1;
 }
-<div class="d-flex align-items-center flex-column justify-content-center gap-2" style="margin-top: 150px;">
+<div class="d-flex align-items-center flex-column justify-content-center gap-2" style="">
     @foreach (var item in Model.Events)
     {
         <div class="guide-item">
             <div class="container d-flex">
                 <div class="item-index">
-                    <p>@(i++) .</p>
+                    <p>@(i++).</p>
                 </div>
                 <div class="item-image">
-                    <img src="https://www.atfkirtasiye.de/media/image/f5/ec/b2/Nutuk_-_Gencler_Icin_FotograflarlayTX7h5hIGmH2P.png"
-                    alt="Nutuk Görseli">
+                    <img src="https://cdn.discordapp.com/attachments/1205968232494800897/1206659344247165018/nutuk.png?ex=65dcd016&is=65ca5b16&hm=af8241681877f9e9dcffe9c007d5f3e8b55ebb8120c41ff436f782e35bcb5282&"
+                        alt="Nutuk Görseli">
                 </div>
                 <div class="item-details">
                     <h1 class="item-header bold">@item.Title</h1>
@@ -25,7 +45,8 @@
                     </div>
                     <br>
                     <div class="item-footer">
-                        <a asp-action="Details" asp-controller="Event" asp-route-id="@item.Id" class="item-discussion-button bold">Tartışma Kılavuzunu İncele</a>
+                        <a asp-action="Details" asp-controller="Event" asp-route-id="@item.Id"
+                            class="item-discussion-button bold">Tartışma Kılavuzunu İncele</a>
                         <p class="item-point"><i class="fa-solid fa-star"></i>Ortalama Puan 9.7</p>
                     </div>
                 </div>

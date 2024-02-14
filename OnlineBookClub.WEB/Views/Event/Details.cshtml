@@ -1,4 +1,109 @@
 ﻿@model Event
 
 
-<p> @Model.Title</p>
+<div class="details-page">
+    <div class="container">
+        <div class="book">
+            <div class="book-image">
+                <img src="https://cdn.discordapp.com/attachments/1205968232494800897/1205985903604928602/nutuk.png?ex=65da5ce5&is=65c7e7e5&hm=2c21473ec9c4ae007182e07556a19930f8e119b58f0cbf1d9b383f334c1bbfe8&"
+                    alt="Nutuk Görseli">
+            </div>
+            <div class="book-details">
+                <h1 class="book-header bold">Nutuk</h1>
+                <p class="book-creator">Mustafa Kemal Atatürk Tarafından</p>
+                <br>
+                <p class="book-brief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus
+                    quisquam quam debitis. Distinctio, unde? Beatae placeat dicta quis voluptate eaque facilis id
+                    aspernatur eius? Amet quos nemo eveniet asperiores magni id error perspiciatis! Eius esse nihil
+                    reprehenderit officiis, reiciendis laborum, veniam quo fuga quasi voluptates nisi, eligendi natus
+                    amet.</p>
+                <br>
+                <div class="book-button">
+                    <p class="book-discussion-button bold">Tartışma Kılavuzunu İncele</p>
+                </div>
+                <div class="book-event-details">
+                    <p class="event-count bold">Yapılan Etkinlik Sayısı: 12</p>
+                    <p class="book-count bold">Kitap Adeti: 20</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="soon-events">
+        <div class="container">
+            <div class="soon-events-header">
+                <h1 class="soon-event-header bold">Yakındaki Etkinlikler</h1>
+            </div>
+            <div class="events">
+                <div class="event">
+                    <div class="event-header">
+                        <p class="event-creator">Fatih Şahinbaş</p>
+                        <p class="event-location">Okul Kütüphanesi</p>
+                    </div>
+                    <p class="event-date">19.12.2023 12:00</p>
+                    <div class="button">
+                        <p class="discussion-button">Kılavuzu Görüntüle</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-header">
+                        <p class="event-creator">Tamer Gülsoy</p>
+                        <p class="event-location">Okul Kütüphanesi</p>
+                    </div>
+
+                    <p class="event-date">21.12.2023 12:00</p>
+                    <div class="button">
+                        <p class="discussion-button">Kılavuzu Görüntüle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="creator-details">
+            <h1 class="creator-title">YAZAR</h1>
+            <h1 class="creator-name bold">Musatafa Kemal Atatürk</h1>
+            <div class="creator-books">
+                <div class="creator-book">
+                    <div class="book-image">
+                        <img src="https://cdn.discordapp.com/attachments/1205968232494800897/1205985903604928602/nutuk.png?ex=65da5ce5&is=65c7e7e5&hm=2c21473ec9c4ae007182e07556a19930f8e119b58f0cbf1d9b383f334c1bbfe8&"
+                            alt="Nutuk Görseli">
+                    </div>
+                    <p class="book-label">Nutuk: Gençler için Fotoğraflarla (Turkish Edition)</p>
+                    <p class="creator-info">Mustafa Kemal Atatürk Tarafından</p>
+                </div>
+                <div class="creator-book">
+                    <div class="book-image">
+                        <img src="https://cdn.discordapp.com/attachments/1205968232494800897/1205985903604928602/nutuk.png?ex=65da5ce5&is=65c7e7e5&hm=2c21473ec9c4ae007182e07556a19930f8e119b58f0cbf1d9b383f334c1bbfe8&"
+                            alt="Nutuk Görseli">
+                    </div>
+                    <p class="book-label">Nutuk: Gençler için Fotoğraflarla (Turkish Edition)</p>
+                    <p class="creator-info">Mustafa Kemal Atatürk Tarafından</p>
+                </div>
+                <div class="creator-book">
+                    <div class="book-image">
+                        <img src="https://cdn.discordapp.com/attachments/1205968232494800897/1205985903604928602/nutuk.png?ex=65da5ce5&is=65c7e7e5&hm=2c21473ec9c4ae007182e07556a19930f8e119b58f0cbf1d9b383f334c1bbfe8&"
+                            alt="Nutuk Görseli">
+                    </div>
+                    <p class="book-label">Nutuk: Gençler için Fotoğraflarla (Turkish Edition)</p>
+                    <p class="creator-info">Mustafa Kemal Atatürk Tarafından</p>
+                </div>
+            </div>
+            <div class="creator-pages">
+                <i class="fa-solid fa-circle selected"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe-section">
+        <div class="container">
+            <p class="subsicribe-text bold">Her ay okuma önerileri ve en popüler kitap kulübü kitaplarını içeren Kitap Kuküpleri bültenini almak için e-postanızı girin.</p>
+            <div class="email-subscribe-button">
+                <textarea placeholder="E-Posta Adresi" name="email" id="email" cols="30" rows="10"></textarea>
+                <p class="subscribe-button">Abone Ol</p>
+            </div>
+        </div>
+    </div>
+</div>

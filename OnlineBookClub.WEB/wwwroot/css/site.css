@@ -35,12 +35,17 @@ body {
 }
 
 .item-image > img {
-  width: 350px;
+  width: 250px;
   height: 350px;
 }
 
 .item-creator{
   color: gray;
+}
+
+.guide-item > .container {
+  gap: 2.5%;
+  padding: 0;
 }
 
 .bold {
@@ -51,21 +56,29 @@ body {
   line-height: 10px;
 }
 
+.item-details {
+  width: 550px;
+}
+
 .item-footer {
   display: flex;
   gap: 5%;
 }
 
 .item-discussion-button{
-  padding: 8px 12px;
+  padding: 10px 12px;
   background-color: rgb(102, 101, 102);
   color: white;
   border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  height: 100%;
   cursor: pointer;
 }
 
-.item-discussion-button:hover{
+.item-footer > a:hover{
   background-color: rgb(53, 53, 53);
+  color: #fff;
   transition: background-color .3s ease-in-out;
 }
 
@@ -76,6 +89,7 @@ body {
 
 .item-point{
   padding: 8px 12px;
+  width: 100%;
 }
 
 /* Details */
@@ -90,7 +104,7 @@ body {
   width: 75%;
 }
 
-.book-image img {
+.book > .book-image img {
   width: 100%;
   height: 100%;
 }
@@ -153,7 +167,7 @@ body {
   gap: 35%;  /* Başa ve sona tutturmayı yapamadığım için bu şekilde geçtim*/
 }
 
-.event-date{
+.event > .event-date{
   text-align: center;
 }
 
@@ -267,4 +281,188 @@ body {
   font-size: 1rem;
   left: 59%;
   cursor: pointer;
+}
+
+.slide {
+  background-color: #00396F;
+  color: white;
+}
+
+.slide > .container {
+  gap: 3%;
+}
+
+.slide > .container > .slide-texts {
+  margin-top: 10%;
+}
+
+.slide > .container > .slide-image > img {
+  margin-bottom: 10%;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+.filter > select {
+  padding: 0.8%;
+  border-radius: 50px;
+}
+
+.guides {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 10%;
+}
+
+.guides > .book-image > img{
+  width: 312px;
+  height: 512px;
+}
+
+.discussion-group {
+  display: flex;
+  gap: 1%;
+}
+
+.book-details{
+  width: 100%;
+}
+
+.discussion-group > i {
+  color: #00396F;
+  font-size: 1.1rem;
+}
+
+.event-header{
+  display: flex;
+  gap: 15%;
+  justify-content: space-between;
+}
+
+.event-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.event-rating-text {
+  font-size: 14px;
+}
+
+.event-rating > i {
+  color: orange;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+}
+
+.event-rating > i:hover {
+  color: darkorange;
+}
+
+.event-actions{
+  display: flex;
+  flex-direction: column;
+}
+
+.event-join-button{
+  font-size: 15px;
+  padding: 8px 12px;
+  background-color: #7a0000;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 45px;
+  transition: background-color .1s ease-in-out;
+}
+
+.event-join-button:hover{
+  background-color: red;
+}
+
+.event-logs {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.rate-log > p{
+  line-height: 0;
+}
+
+.question {
+  margin-top: 3%;
+  display: flex;
+  font-size: 14px;
+  gap: 1%;
+}
+
+.question > i {
+  color: #00396F;
+  font-size: 1.3rem;
+}
+
+.event-details-footer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.event-teacher {
+  display: flex;
+  color: gray;
+}
+
+.event-teacher > img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.event-notify {
+  line-height: 10px;
+}
+
+.event-gallery {
+  display: flex;
+  gap: 2%;
+  justify-content: space-between;
+}
+
+.gallery-image{
+  width: 456px;
+  height: 350px;
+}
+
+.gallery-image > img{
+  width: 456px;
+  height: 350px;
+}
+
+.event-details > .creator-pages{
+  margin-top: 50px;
+}
+
+.guides > .book-image > p {
+  margin-top: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.book-image > .book-detail-button{
+  padding: 8px 12px;
+  background-color: #7a0000;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transition: background-color .1s ease-in-out;
+}
+
+.book-image > .book-detail-button:hover{
+  background-color: red;
 }
