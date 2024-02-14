@@ -9,83 +9,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineBookClub.WEB
 build_property.RootNamespace = OnlineBookClub.WEB
-build_property.ProjectDir = C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\
+build_property.ProjectDir = C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.WEB\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB
+build_property.MSBuildProjectDirectory = C:\Users\LulQu\source\repos\OnlineBookClub\OnlineBookClub.WEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Event/Details.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Event/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Event/Index.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Event/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Home/Index.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Home/Login.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Home/Privacy.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Home/SignUp.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Home/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/Error.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/_Navbar.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/User/AccessDenied.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/User/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/User/Claims.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/User/Claims.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDbGFpbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/User/Index.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/User/PasswordChange.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/User/PasswordChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQYXNzd29yZENoYW5nZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/User/SchoolPage.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/User/SchoolPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTY2hvb2xQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/User/UserEdit.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/User/UserEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/_ViewImports.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/_ViewStart.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/okanc/OneDrive/Masaüstü/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/_Layout.cshtml]
+[C:/Users/LulQu/source/repos/OnlineBookClub/OnlineBookClub.WEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-itm9824m9x
