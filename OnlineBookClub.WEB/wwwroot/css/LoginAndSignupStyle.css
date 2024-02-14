@@ -125,10 +125,6 @@ nav {
 
 
 /* - |MAIN| - */
-main {
-    display: flex;
-    justify-content: space-around;
-}
 
 .Main-Middle-Line {
     width: 2px;
