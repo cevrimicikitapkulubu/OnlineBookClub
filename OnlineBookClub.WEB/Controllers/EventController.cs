@@ -31,5 +31,10 @@ namespace OnlineBookClub.WEB.Controllers
 
             return View(_event);
         }
+
+         public IActionResult Guides()
+        {
+            return View();
+        }
     }
 }

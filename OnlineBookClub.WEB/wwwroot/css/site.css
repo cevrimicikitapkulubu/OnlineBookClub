@@ -267,8 +267,8 @@ body {
   border-top-left-radius: 30px;
 }
 
-#email:focus-visible {
-  border: none;
+.email-subscribe-button textarea:focus {
+  outline: none;
 }
 
 .subscribe-button{
@@ -465,4 +465,193 @@ body {
 
 .book-image > .book-detail-button:hover{
   background-color: red;
+}
+
+footer {
+  background-color: #00396F;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+}
+
+.footer-logo{
+  width: 20%;
+  margin: 1.5%;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+}
+
+.footer-logo > .footer-logo-text {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.footer-urls {
+  margin: 1.5%;
+  width: 20%;
+}
+
+.footer-urls > a {
+  display: block;
+  line-height: 35px;
+  color: white;
+  transition: color .3s ease-in-out;
+}
+
+.footer-urls > a:hover {
+  color: red;
+}
+
+.footer-urls > a > i {
+  color: red;
+  margin-right: 5px;
+}
+
+.footer-follow{
+  margin: 1.5%;
+  width: 20%;
+}
+
+.footer-search{
+  margin: 1.5%;
+  width: 20%;
+}
+
+.footer-end {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+hr.footer-hr{
+  border: 3px solid white;
+  color: #fff;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.footer-search-area{
+  display: flex;
+  justify-content: start;
+}
+
+.footer-search-area textarea {
+  border: 1px solid #cfcfcf;
+  width: 200px;
+  height: 40px;
+  padding: 6px 20px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.footer-search-area textarea:focus{
+  outline: none;
+}
+
+.search-button{
+  padding: 7.5px 0;
+  background-color: red;
+  border-radius: 30px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  right: 13rem;;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.users{
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.user-placement{
+  background-color: #e0e0e0;
+  padding: 35px 35px;
+  border-radius: 25px;
+  width: 22%;
+  box-shadow: 0 0.5rem 0.5rem #3b3b3bab;
+}
+
+.user-placement > h1 {
+  font-size: 2rem;
+}
+
+.user-placement > .user > .user-image > img {
+  width: 50px;
+  height: 50px;
+}
+
+.user-details{
+  line-height: 15px;
+}
+
+.user-point{
+  margin-top: 1rem;
+  margin-left: 6rem;
+  text-align: center;
+}
+
+.user-point > i{
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+.users-image {
+  width: 50%;
+  height: 100%;
+}
+
+.users-image > img {
+  width: 70%;
+  height: 100%;
+}
+
+.error-page{
+  width: 100%;
+  height: 100%;
+  background-color: #00396F;
+  color: #fff;
+}
+
+.error {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.error > a{
+  padding: 10px 15px;
+  background-color: #7a0000;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background .3s ease-in-out;
+}
+
+.error > a:hover{
+  background: #ff0000;
+}
+
+.error > h1 {
+  font-size: 5rem;
+}
+
+.error > h2 {
+  font-size: 3rem;
 }

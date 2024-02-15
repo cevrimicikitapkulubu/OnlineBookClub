@@ -10,9 +10,9 @@ using OnlineBookClub.WEB.ViewModels.Auth;
 
 namespace OnlineBookClub.WEB.Controllers
 {
-    public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
+	public class HomeController : Controller
+	{
+		private readonly ILogger<HomeController> _logger;
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
 		private readonly IEmailService _emailService;
@@ -25,24 +25,30 @@ namespace OnlineBookClub.WEB.Controllers
 			_emailService = emailService;
 		}
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+		public IActionResult Index()
+		{
+			return View();
+		}
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+		public IActionResult Users()
+		{
+			return View();
+		}
+
+
+		public IActionResult Privacy()
+		{
+			return View();
+		}
 
 		public IActionResult SignUp()
 		{
-            if (User.Identity!.IsAuthenticated)
-            {
-                return RedirectToAction("Index", "Home");
-            }
+			if (User.Identity!.IsAuthenticated)
+			{
+				return RedirectToAction("Index", "Home");
+			}
 
-            return View();
+			return View();
 		}
 
 		[HttpPost]
@@ -86,18 +92,18 @@ namespace OnlineBookClub.WEB.Controllers
 
 		public IActionResult LogIn()
 		{
-            if (User.Identity!.IsAuthenticated)
-            {
-                return RedirectToAction("Index", "Home");
-            }
+			if (User.Identity!.IsAuthenticated)
+			{
+				return RedirectToAction("Index", "Home");
+			}
 
-            return View();
+			return View();
 		}
 
 		[HttpPost]
 		public async Task<IActionResult> LogIn(LogInVM request, string? returnUrl = null)
-		{ 
-            if (!ModelState.IsValid)
+		{
+			if (!ModelState.IsValid)
 			{
 				return View();
 			}
@@ -133,9 +139,9 @@ namespace OnlineBookClub.WEB.Controllers
 
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-    }
+		public IActionResult Error()
+		{
+			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+		}
+	}
 }
