@@ -14,8 +14,8 @@ namespace OnlineBookClub.WEB.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: false),
-                    IS_DELETED = table.Column<bool>(type: "bit", nullable: false),
+                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: true),
+                    IS_DELETED = table.Column<bool>(type: "bit", nullable: true),
                     CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     CREATED_USER_ID = table.Column<int>(type: "int", nullable: true),
                     MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
@@ -56,6 +56,19 @@ namespace OnlineBookClub.WEB.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "EventDetails",
+                columns: table => new
+                {
+                    EventId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Description = table.Column<string>(type: "nvarchar(4000)", maxLength: 4000, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EventDetails", x => x.EventId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Levels",
                 columns: table => new
                 {
@@ -75,7 +88,7 @@ namespace OnlineBookClub.WEB.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IsOnline = table.Column<bool>(type: "bit", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -92,6 +105,18 @@ namespace OnlineBookClub.WEB.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ratings", x => x.Rate);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserBookListType",
+                columns: table => new
+                {
+                    Id = table.Column<byte>(type: "tinyint", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserBookListType", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -157,6 +182,27 @@ namespace OnlineBookClub.WEB.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "UserBookLists",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ISBN = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserBookListTypeId = table.Column<byte>(type: "tinyint", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserBookLists", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserBookLists_UserBookListType_UserBookListTypeId",
+                        column: x => x.UserBookListTypeId,
+                        principalTable: "UserBookListType",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Schools",
                 columns: table => new
                 {
@@ -181,17 +227,18 @@ namespace OnlineBookClub.WEB.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Firstname = table.Column<string>(type: "nvarchar(48)", maxLength: 48, nullable: false),
-                    Lastname = table.Column<string>(type: "nvarchar(48)", maxLength: 48, nullable: false),
-                    DepartmentId = table.Column<short>(type: "smallint", nullable: false),
-                    Gender = table.Column<bool>(type: "bit", nullable: false),
+                    Firstname = table.Column<string>(type: "nvarchar(48)", maxLength: 48, nullable: true),
+                    Lastname = table.Column<string>(type: "nvarchar(48)", maxLength: 48, nullable: true),
+                    DepartmentId = table.Column<short>(type: "smallint", nullable: true),
+                    Gender = table.Column<bool>(type: "bit", nullable: true),
                     SchoolId = table.Column<short>(type: "smallint", nullable: false),
-                    SchoolNo = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: true),
+                    ProfilePicture = table.Column<string>(type: "nvarchar(78)", maxLength: 78, nullable: true),
+                    SchoolNo = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
                     LevelId = table.Column<byte>(type: "tinyint", nullable: true),
                     Point = table.Column<short>(type: "smallint", nullable: true),
-                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: false),
-                    IS_DELETED = table.Column<bool>(type: "bit", nullable: false),
-                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: true),
+                    IS_DELETED = table.Column<bool>(type: "bit", nullable: true),
+                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -215,8 +262,7 @@ namespace OnlineBookClub.WEB.Migrations
                         name: "FK_AspNetUsers_Departments_DepartmentId",
                         column: x => x.DepartmentId,
                         principalTable: "Departments",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Levels_LevelId",
                         column: x => x.LevelId,
@@ -224,6 +270,40 @@ namespace OnlineBookClub.WEB.Migrations
                         principalColumn: "LevelId");
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Schools_SchoolId",
+                        column: x => x.SchoolId,
+                        principalTable: "Schools",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EventRequirements",
+                columns: table => new
+                {
+                    EventId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SchoolId = table.Column<short>(type: "smallint", nullable: false),
+                    DepartmentId = table.Column<short>(type: "smallint", nullable: false),
+                    UserRoleId = table.Column<byte>(type: "tinyint", nullable: false),
+                    Gender = table.Column<bool>(type: "bit", nullable: false),
+                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: false),
+                    IS_DELETED = table.Column<bool>(type: "bit", nullable: false),
+                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CREATED_USER_ID = table.Column<int>(type: "int", nullable: false),
+                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    MODIFIED_USER_ID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EventRequirements", x => x.EventId);
+                    table.ForeignKey(
+                        name: "FK_EventRequirements_Departments_DepartmentId",
+                        column: x => x.DepartmentId,
+                        principalTable: "Departments",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_EventRequirements_Schools_SchoolId",
                         column: x => x.SchoolId,
                         principalTable: "Schools",
                         principalColumn: "Id",
@@ -239,14 +319,14 @@ namespace OnlineBookClub.WEB.Migrations
                     ISBN = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     Title = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
                     StartDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: false),
-                    IS_DELETED = table.Column<bool>(type: "bit", nullable: false),
-                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    CREATED_USER_ID = table.Column<int>(type: "int", nullable: false),
-                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    MODIFIED_USER_ID = table.Column<int>(type: "int", nullable: false),
                     SchoolId = table.Column<short>(type: "smallint", nullable: false),
-                    LocationId = table.Column<int>(type: "int", nullable: false)
+                    LocationId = table.Column<int>(type: "int", nullable: false),
+                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: true),
+                    IS_DELETED = table.Column<bool>(type: "bit", nullable: true),
+                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    CREATED_USER_ID = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    MODIFIED_USER_ID = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -351,34 +431,14 @@ namespace OnlineBookClub.WEB.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EventDetails",
-                columns: table => new
-                {
-                    EventId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Description = table.Column<string>(type: "nvarchar(4000)", maxLength: 4000, nullable: false),
-                    EventId1 = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EventDetails", x => x.EventId);
-                    table.ForeignKey(
-                        name: "FK_EventDetails_Events_EventId1",
-                        column: x => x.EventId1,
-                        principalTable: "Events",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "EventParticipants",
                 columns: table => new
                 {
                     EventId = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     RatingRate = table.Column<byte>(type: "tinyint", nullable: false)
                 },
                 constraints: table =>
@@ -406,7 +466,7 @@ namespace OnlineBookClub.WEB.Migrations
                     UserId = table.Column<int>(type: "int", nullable: false),
                     Rating = table.Column<short>(type: "smallint", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
+                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -420,67 +480,27 @@ namespace OnlineBookClub.WEB.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EventRequirements",
-                columns: table => new
-                {
-                    EventId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    SchoolId = table.Column<short>(type: "smallint", nullable: false),
-                    DepartmentId = table.Column<short>(type: "smallint", nullable: false),
-                    UserRoleId = table.Column<byte>(type: "tinyint", nullable: false),
-                    IS_ACTIVE = table.Column<bool>(type: "bit", nullable: false),
-                    IS_DELETED = table.Column<bool>(type: "bit", nullable: false),
-                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    CREATED_USER_ID = table.Column<int>(type: "int", nullable: false),
-                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    MODIFIED_USER_ID = table.Column<int>(type: "int", nullable: false),
-                    EventId1 = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EventRequirements", x => x.EventId);
-                    table.ForeignKey(
-                        name: "FK_EventRequirements_Departments_DepartmentId",
-                        column: x => x.DepartmentId,
-                        principalTable: "Departments",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
-                    table.ForeignKey(
-                        name: "FK_EventRequirements_Events_EventId1",
-                        column: x => x.EventId1,
-                        principalTable: "Events",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
-                    table.ForeignKey(
-                        name: "FK_EventRequirements_Schools_SchoolId",
-                        column: x => x.SchoolId,
-                        principalTable: "Schools",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "EventSubjects",
                 columns: table => new
                 {
-                    EventId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RowNumber = table.Column<byte>(type: "tinyint", nullable: false),
+                    EventId = table.Column<int>(type: "int", nullable: false),
+                    RowNumber = table.Column<byte>(type: "tinyint", nullable: true),
                     Question = table.Column<string>(type: "nvarchar(512)", maxLength: 512, nullable: false),
                     IS_ACTIVE = table.Column<bool>(type: "bit", nullable: false),
                     IS_DELETED = table.Column<bool>(type: "bit", nullable: false),
                     CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    CREATED_USER_ID = table.Column<int>(type: "int", nullable: false),
-                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    MODIFIED_USER_ID = table.Column<int>(type: "int", nullable: false),
-                    EventId1 = table.Column<int>(type: "int", nullable: false)
+                    CREATED_USER_ID = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MODIFIED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    MODIFIED_USER_ID = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EventSubjects", x => x.EventId);
+                    table.PrimaryKey("PK_EventSubjects", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_EventSubjects_Events_EventId1",
-                        column: x => x.EventId1,
+                        name: "FK_EventSubjects_Events_EventId",
+                        column: x => x.EventId,
                         principalTable: "Events",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -493,7 +513,7 @@ namespace OnlineBookClub.WEB.Migrations
                     UserId = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
                     AchievementId = table.Column<int>(type: "int", nullable: false),
                     EventId = table.Column<int>(type: "int", nullable: false),
-                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
+                    CREATED_DATE = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -595,11 +615,6 @@ namespace OnlineBookClub.WEB.Migrations
                 .Annotation("SqlServer:FillFactor", 70);
 
             migrationBuilder.CreateIndex(
-                name: "IX_EventDetails_EventId1",
-                table: "EventDetails",
-                column: "EventId1");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_EventParticipants_RatingRate",
                 table: "EventParticipants",
                 column: "RatingRate");
@@ -608,11 +623,6 @@ namespace OnlineBookClub.WEB.Migrations
                 name: "IX_EventRequirements_DepartmentId",
                 table: "EventRequirements",
                 column: "DepartmentId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_EventRequirements_EventId1",
-                table: "EventRequirements",
-                column: "EventId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_EventRequirements_SchoolId",
@@ -630,9 +640,9 @@ namespace OnlineBookClub.WEB.Migrations
                 column: "SchoolId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_EventSubjects_EventId1",
+                name: "IX_EventSubjects_EventId",
                 table: "EventSubjects",
-                column: "EventId1");
+                column: "EventId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Levels_LevelId",
@@ -666,6 +676,11 @@ namespace OnlineBookClub.WEB.Migrations
                 name: "IX_UserAchievements_EventId",
                 table: "UserAchievements",
                 column: "EventId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserBookLists_UserBookListTypeId",
+                table: "UserBookLists",
+                column: "UserBookListTypeId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -704,6 +719,9 @@ namespace OnlineBookClub.WEB.Migrations
                 name: "UserAchievements");
 
             migrationBuilder.DropTable(
+                name: "UserBookLists");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
@@ -717,6 +735,9 @@ namespace OnlineBookClub.WEB.Migrations
 
             migrationBuilder.DropTable(
                 name: "Events");
+
+            migrationBuilder.DropTable(
+                name: "UserBookListType");
 
             migrationBuilder.DropTable(
                 name: "Departments");

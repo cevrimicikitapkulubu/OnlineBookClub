@@ -9,9 +9,10 @@ namespace OnlineBookClub.WEB.Models.DB.Const
         [MaxLength(16)]
         public string Title { get; set; } = null!;
 
-        public Int16? EventCount { get; set; }
+        public Int16? EventCount { get; set; } = 1;
 
         public byte LevelId { get; set; }
+
 
         //?=========> REFERANCES
 

@@ -10,8 +10,5 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         [MaxLength(4000)]
         public string Description { get; set; } = null!;
 
-        //?=========> REFERANCES
-
-        public virtual Event Event { get; set; }
     }
 }

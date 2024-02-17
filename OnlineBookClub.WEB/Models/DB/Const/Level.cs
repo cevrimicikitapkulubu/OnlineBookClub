@@ -9,6 +9,7 @@ namespace OnlineBookClub.WEB.Models.DB.Const
 
         public Int16 ExperiencePoint { get; set; }
 
+
         //?=========> REFERANCES
 
         public virtual List<Achievement> Achievements  { get; set; }

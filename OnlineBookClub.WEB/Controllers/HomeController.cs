@@ -7,6 +7,7 @@ using OnlineBookClub.WEB.Models.Identity;
 using System.Diagnostics;
 using System.Security.Claims;
 using OnlineBookClub.WEB.ViewModels.Auth;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace OnlineBookClub.WEB.Controllers
 {
@@ -16,17 +17,19 @@ namespace OnlineBookClub.WEB.Controllers
 
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
+		private readonly OnlineBookClubContext _context;
 		private readonly IEmailService _emailService;
 
-		public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IEmailService emailService)
-		{
-			_logger = logger;
-			_userManager = userManager;
-			_signInManager = signInManager;
-			_emailService = emailService;
-		}
+        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IEmailService emailService, OnlineBookClubContext context)
+        {
+            _logger = logger;
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _emailService = emailService;
+            _context = context;
+        }
 
-		public IActionResult Index()
+        public IActionResult Index()
 		{
 			return View();
 		}
@@ -49,7 +52,16 @@ namespace OnlineBookClub.WEB.Controllers
 				return RedirectToAction("Index", "Home");
 			}
 
-			return View();
+			List<SelectListItem> schoolListItems = new List<SelectListItem>();
+
+            foreach (var school in _context.Schools.ToList())
+            {
+				schoolListItems.Add(new SelectListItem() { Text = school.Name, Value = school.Id.ToString() });
+            }
+
+			ViewBag.SchoolListItems = schoolListItems;
+
+            return View();
 		}
 
 		[HttpPost]
@@ -68,7 +80,15 @@ namespace OnlineBookClub.WEB.Controllers
 				return RedirectToAction(nameof(HomeController.SignUp));
 			}
 
-			var identityResult = await _userManager.CreateAsync(new() { UserName = request.UserName, Email = request.Email, PhoneNumber = request.Phone }, request.PasswordConfirm);
+			var identityResult = await _userManager.CreateAsync(new() 
+			{ 
+				UserName = request.UserName, 
+				Email = request.Email, 
+				PhoneNumber = request.Phone,
+				SchoolId = request.SchoolId,
+				SchoolNo = request.SchoolNo
+			}
+			, request.PasswordConfirm);
 
 			if (!identityResult.Succeeded)
 			{

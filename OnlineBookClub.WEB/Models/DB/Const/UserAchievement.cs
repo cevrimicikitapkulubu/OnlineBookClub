@@ -12,11 +12,12 @@ namespace OnlineBookClub.WEB.Models.DB.Const
 
         public int AchievementId { get; set; }
 
-        public int EventId { get; set; }
+        public int EventId { get; set; } 
+
 
         //?=========> AUDIT COLUMNS
 
-        public DateTimeOffset CREATED_DATE { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset? CREATED_DATE { get; set; } = DateTimeOffset.UtcNow;
 
         //?=========> REFERANCES
 

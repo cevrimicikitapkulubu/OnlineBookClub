@@ -26,6 +26,15 @@ namespace OnlineBookClub.WEB.ViewModels.Auth
         [EmailAddress(ErrorMessage = "Email formatı yanlış.")]
         public string Email { get; set; }
 
+        [DisplayName("Okul No")]
+        [MaxLength(8)]
+        [Required(ErrorMessage = "'Okul Numarası alanı boş bırakılamaz.")]
+        public string SchoolNo { get; set; }
+
+        [DisplayName("Okul")]
+        [Required(ErrorMessage = "'Okul' boş bırakılamaz.")]
+        public short SchoolId { get; set; }
+
         [DisplayName("Phone")]
         [MaxLength(11,ErrorMessage ="'Telefon Numarası' alanı en fazla '11' karakter uzunluğunda olabilir.")]
         [Required(ErrorMessage = "'Telefon Numarası' alanı boş bırakılamaz.")]

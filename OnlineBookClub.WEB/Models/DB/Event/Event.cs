@@ -18,18 +18,19 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         public DateTimeOffset StartDate { get; set; }
 
         public short SchoolId { get; set; }
+
         public int LocationId { get; set; }
 
 
         //!-- AUDIT COLUMNS
 
         [DefaultValue(true)]
-        public bool IS_ACTIVE { get; set; }
+        public bool? IS_ACTIVE { get; set; }
 
         [DefaultValue(false)]
-        public bool IS_DELETED { get; set; }
+        public bool? IS_DELETED { get; set; }
 
-        public DateTimeOffset CREATED_DATE { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset? CREATED_DATE { get; set; } = DateTimeOffset.UtcNow;
 
         public string? CREATED_USER_ID { get; set; }
 

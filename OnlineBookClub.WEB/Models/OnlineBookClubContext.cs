@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineBookClub.WEB.Models.DB.Const;
 using OnlineBookClub.WEB.Models.DB.Event;
+using OnlineBookClub.WEB.Models.DB.User;
 using OnlineBookClub.WEB.Models.Identity;
 
 namespace OnlineBookClub.WEB.Models
@@ -109,6 +110,7 @@ namespace OnlineBookClub.WEB.Models
         public DbSet<EventSubject> EventSubjects { get; set; }
         public DbSet<Location> Locations { get; set; }
 
-
+        public DbSet<UserBookListType> UserBookListType { get; set; }
+        public DbSet<UserBookList> UserBookLists { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace OnlineBookClub.WEB.Models.Identity
         public string? ProfilePicture { get; set; } = "DefaultUserPicture.jpg";
 
         [MaxLength(8)]
-        public string? SchoolNo { get; set; }
+        public string SchoolNo { get; set; } = null!;
 
         public byte? LevelId { get; set; }
 
