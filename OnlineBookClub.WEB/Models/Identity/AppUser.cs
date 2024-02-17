@@ -13,7 +13,7 @@ namespace OnlineBookClub.WEB.Models.Identity
         [MaxLength(48)]
         public string? Lastname { get; set; } = null!;
 
-        public Int16? DepartmentId { get; set; }
+        public short? DepartmentId { get; set; }
 
         public bool? Gender { get; set; }
 

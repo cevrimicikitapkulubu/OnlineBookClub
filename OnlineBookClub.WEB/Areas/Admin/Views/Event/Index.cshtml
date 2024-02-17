@@ -1,0 +1,28 @@
+﻿@model EventVM
+
+<form method="post" asp-controller="Event" asp-action="Create">
+    <select asp-for="ISBN">
+        <option value="1ASDF">Nutuk</option>
+        <option value="2ASDF">Ateşten Gömlek</option>
+    </select>
+
+    <input asp-for="Title" placeholder="Title"/>
+    <input asp-for="Question_1" placeholder="Question 1"/>
+    <input asp-for="Question_2" placeholder="Question 2" />
+    <input asp-for="Question_3" placeholder="Question 3" />
+    
+    <select asp-for="LocationId">
+        <option value="1">Okul Kütüphanesi</option>
+    </select>
+
+    <input asp-for="StartDate" />
+
+    <input type="submit" value="Create"/>
+</form>
+
+<ul>
+    @foreach (var item in Model.Events)
+    {
+        <li>@item.Title</li>
+    }
+</ul>

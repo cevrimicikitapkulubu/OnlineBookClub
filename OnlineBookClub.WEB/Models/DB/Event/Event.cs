@@ -17,6 +17,9 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 
         public DateTimeOffset StartDate { get; set; }
 
+        public short SchoolId { get; set; }
+        public int LocationId { get; set; }
+
 
         //!-- AUDIT COLUMNS
 

@@ -4,7 +4,7 @@ namespace OnlineBookClub.WEB.Models.DB.Const
 {
     public class School
     {
-        public Int16 Id { get; set; }
+        public short Id { get; set; }
 
         [MaxLength(128)]
         public string Name { get; set; } = null!;

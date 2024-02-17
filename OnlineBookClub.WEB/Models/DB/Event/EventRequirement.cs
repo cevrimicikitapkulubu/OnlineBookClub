@@ -10,7 +10,7 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         [Key]
         public int EventId { get; set; }
 
-        public Int16 SchoolId { get; set; }
+        public int SchoolId { get; set; }
 
         public short DepartmentId { get; set; }
 

@@ -13,6 +13,7 @@ namespace OnlineBookClub.WEB.Controllers
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
+
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
 		private readonly IEmailService _emailService;

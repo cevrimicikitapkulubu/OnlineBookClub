@@ -49,11 +49,10 @@ builder.Services.ConfigureApplicationCookie(option =>
 	cookieBuilder.Name = "AspNetCoreIdentityApp";
 	option.LoginPath = new PathString("/Home/SignIn");
 	option.LogoutPath = new PathString("/Member/Logout");
-	option.AccessDeniedPath = new PathString("/Member/AccessDenied");
+	option.AccessDeniedPath = new PathString("/Home/Error");
 	option.Cookie = cookieBuilder;
 	option.ExpireTimeSpan = TimeSpan.FromDays(60);
 	option.SlidingExpiration = true;
-
 });
 
 var app = builder.Build();
@@ -88,7 +87,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
            name: "LogIn",
            pattern: "LogIn",
-           defaults: new { controller = "Home", action = "LogIn" });
+           defaults: new { controller = "Home", action = "Login" });
 
     endpoints.MapControllerRoute(
 	  name: "areas",
