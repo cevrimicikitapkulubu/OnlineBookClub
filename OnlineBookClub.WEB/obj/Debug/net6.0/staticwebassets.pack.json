@@ -469,6 +469,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\Default_AchievementImage.webp",
+      "PackagePath": "staticwebassets\\img\\achievemenImages\\Default_AchievementImage.webp"
+    },
+    {
+      "Id": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\FiveEventJoin.jpg",
+      "PackagePath": "staticwebassets\\img\\achievemenImages\\FiveEventJoin.jpg"
+    },
+    {
       "Id": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\books\\9789944888349-us.jpg",
       "PackagePath": "staticwebassets\\img\\books\\9789944888349-us.jpg"
     },

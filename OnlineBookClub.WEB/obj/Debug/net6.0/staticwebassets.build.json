@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1+b4p0buvq5GBSaQfDB+J9goYdbiy1BzeWJK6JwJgG8=",
+  "Hash": "wVALekDX6waoOhEVWWe/VVUks55xlu/znr6VKJiqWOc=",
   "Source": "OnlineBookClub.WEB",
   "BasePath": "_content/OnlineBookClub.WEB",
   "Mode": "Default",
@@ -2021,6 +2021,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\Default_AchievementImage.webp",
+      "SourceId": "OnlineBookClub.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\",
+      "BasePath": "_content/OnlineBookClub.WEB",
+      "RelativePath": "img/achievemenImages/Default_AchievementImage.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\achievemenImages\\Default_AchievementImage.webp"
+    },
+    {
+      "Identity": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\FiveEventJoin.jpg",
+      "SourceId": "OnlineBookClub.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\",
+      "BasePath": "_content/OnlineBookClub.WEB",
+      "RelativePath": "img/achievemenImages/FiveEventJoin.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\achievemenImages\\FiveEventJoin.jpg"
     },
     {
       "Identity": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\books\\9789944888349-us.jpg",

@@ -6,8 +6,11 @@ namespace OnlineBookClub.WEB.Models.DB.Const
     {
         public int Id { get; set; }
 
-        [MaxLength(16)]
+        [MaxLength(64)]
         public string Title { get; set; } = null!;
+
+        [MaxLength(78)]
+        public string? Image {  get; set; } = "Default_AchievementImage.webp";
 
         public Int16? EventCount { get; set; } = 1;
 

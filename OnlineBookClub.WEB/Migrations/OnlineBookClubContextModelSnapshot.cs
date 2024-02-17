@@ -139,13 +139,17 @@ namespace OnlineBookClub.WEB.Migrations
                     b.Property<short?>("EventCount")
                         .HasColumnType("smallint");
 
+                    b.Property<string>("Image")
+                        .HasMaxLength(78)
+                        .HasColumnType("nvarchar(78)");
+
                     b.Property<byte>("LevelId")
                         .HasColumnType("tinyint");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(16)
-                        .HasColumnType("nvarchar(16)");
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
 
                     b.HasKey("Id");
 
