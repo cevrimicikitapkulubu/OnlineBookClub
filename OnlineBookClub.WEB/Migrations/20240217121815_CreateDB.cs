@@ -166,7 +166,8 @@ namespace OnlineBookClub.WEB.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(16)", maxLength: 16, nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(78)", maxLength: 78, nullable: true),
                     EventCount = table.Column<short>(type: "smallint", nullable: true),
                     LevelId = table.Column<byte>(type: "tinyint", nullable: false)
                 },

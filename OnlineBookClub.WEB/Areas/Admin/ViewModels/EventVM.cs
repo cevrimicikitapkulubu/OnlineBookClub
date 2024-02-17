@@ -12,9 +12,6 @@ namespace OnlineBookClub.WEB.Areas.Admin.ViewModels
         public string Title { get; set; } = null!;
         public int LocationId { get; set; }
         public DateTime StartDate { get; set; }
-        public string Question_1 { get; set; }
-        public string Question_2 { get; set; }
-        public string Question_3 { get; set; }
 
         public List<Event> Events { get; set; }
     }
