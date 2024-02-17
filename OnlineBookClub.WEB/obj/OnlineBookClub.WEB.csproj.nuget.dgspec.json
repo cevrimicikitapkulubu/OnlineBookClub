@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj": {}
+    "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj": {
+    "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
+        "projectUniqueName": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
         "projectName": "OnlineBookClub.WEB",
-        "projectPath": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
-        "packagesPath": "C:\\Users\\fsahi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
+        "projectPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
+        "packagesPath": "C:\\Users\\okanc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fsahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\okanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

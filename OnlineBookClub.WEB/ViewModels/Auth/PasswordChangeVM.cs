@@ -6,22 +6,22 @@ namespace OnlineBookClub.WEB.ViewModels.Auth
     public class PasswordChangeVM
     {
 
-        [DisplayName("Old Password")]
-        [Required(ErrorMessage = "The 'Password' cannot be left empty.")]
-        [MinLength(10, ErrorMessage = "Your password must be a minimum of 10 characters.")]
+        [DisplayName("Eski Şifre")]
+        [Required(ErrorMessage = "Şifre boş bırakılamaz")]
+        [MinLength(10, ErrorMessage = "Şifre uzunluğunun en az 10 karakter olması gerekli")]
         [DataType(DataType.Password)]
         public string PasswordOld { get; set; } = null!;
 
-        [DisplayName("New Password")]
-        [Required(ErrorMessage = "The 'New Password' cannot be left empty.")]
-        [MinLength(10, ErrorMessage = "Your password must be a minimum of 10 characters.")]
+        [DisplayName("Yeni Şifre")]
+        [Required(ErrorMessage = "Yeni Şifre boş bırakılamaz\"")]
+        [MinLength(10, ErrorMessage = "Şifre uzunluğunun en az 10 karakter olması gerekli")]
         [DataType(DataType.Password)]
         public string PasswordNew { get; set; } = null!;
 
-        [DisplayName("New Password Confirm")]
-        [Required(ErrorMessage = "The 'Password Confirm' cannot be left empty.")]
-        [Compare(nameof(PasswordNew), ErrorMessage = "The Passwords you entered do not match.")]
-        [MinLength(10, ErrorMessage = "Your password must be a minimum of 10 characters.")]
+        [DisplayName("Yeni Şifre Tekrar")]
+        [Required(ErrorMessage = "Şifre Tekrar boş bırakılamaz\"")]
+        [Compare(nameof(PasswordNew), ErrorMessage = "Şifreler uyuşmuyor")]
+        [MinLength(10, ErrorMessage = "Şifre uzunluğunun en az 10 karakter olması gerekli")]
         [DataType(DataType.Password)]
         public string PasswordNewConfirm { get; set; } = null!;
     }

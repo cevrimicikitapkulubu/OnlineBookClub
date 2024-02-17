@@ -16,8 +16,12 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         [AllowNull]
         [MaxLength(256)]
         public string? Description { get; set; }
-        public DateTimeOffset CREATED_DATE { get; set; } = DateTimeOffset.Now;
-        public DateTimeOffset MODIFIED_DATE { get; set; }
+
+        //!-- AUDIT COLUMNS
+
+        public DateTimeOffset? CREATED_DATE { get; set; } = DateTimeOffset.Now;
+
+        public DateTimeOffset? MODIFIED_DATE { get; set; }
 
         //?=========> REFERANCES
 

@@ -6,10 +6,11 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 {
     public class EventSubject
     {
-        [Key]
+        public int Id {  get; set; } 
+
         public int EventId { get; set; }
 
-        public byte RowNumber { get; set; }
+        public byte? RowNumber { get; set; }
 
         [MaxLength(512)]
         public string Question { get; set; }

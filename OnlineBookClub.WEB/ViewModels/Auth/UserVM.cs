@@ -34,6 +34,5 @@ namespace OnlineBookClub.WEB.ViewModels.Auth
         public Level? Level { get; set; }
 
         public short? Point { get; set; }
-
     }
 }

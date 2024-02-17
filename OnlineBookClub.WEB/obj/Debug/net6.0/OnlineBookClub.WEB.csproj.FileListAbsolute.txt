@@ -1018,3 +1018,4 @@ C:\Users\fsahi\Source\Repos\cevrimicikitapkulubu\OnlineBookClub\OnlineBookClub.W
 C:\Users\fsahi\Source\Repos\cevrimicikitapkulubu\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\OnlineBookClub.WEB.genruntimeconfig.cache
 C:\Users\fsahi\Source\Repos\cevrimicikitapkulubu\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\ref\OnlineBookClub.WEB.dll
 C:\Users\fsahi\source\repos\cevrimicikitapkulubu\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutBlank.cshtml.rz.scp.css
+C:\Users\okanc\OneDrive\Masaüstü\OnlineBookClub\OnlineBookClub.WEB\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutBlank.cshtml.rz.scp.css

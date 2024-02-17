@@ -8,7 +8,7 @@
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }
 
-<div class="form-signin m-auto col-6">
+@* <div class="form-signin m-auto col-6">
     <form asp-action="UserEdit" method="post" enctype="multipart/form-data" class="d-flex flex-column gap-3 justify-content-center">
         <h1 class="h3 mb-3 fw-normal">Update</h1>
 
@@ -53,6 +53,7 @@
             <label asp-for="SchoolNo"></label>
             <span class="text-danger" asp-validation-for="SchoolNo"></span>
         </div>
+
         <div class="form-group">
             <label asp-for="ProfilePicture"></label>
             <input class="form-control" asp-for="ProfilePicture" accept="image/png, image/jpg, image/jpeg" placeholder="Profile Picture">
@@ -62,4 +63,130 @@
 
         <button class="btn btn-primary w-100 py-2" type="submit">Update</button>
     </form>
+</div>
+ *@
+
+<div class="Select-Group">
+    <div class="Sidebar">
+        <div class="Sidebar-Area">
+            <div class="Sidebar-Up">
+                <div class="Profile">
+                <img src="~/img/userpictures/@Model.ProfilePicture" alt="">
+                    <p>@Model.Firstname @Model.Lastname</p>
+                </div>
+
+                <div class="SidebarUpLinks">
+                    <ul>
+                        <li><a href="profile.html">Genel Bakış</a></li>
+                        <li><a href="readedbook.html">Okuduğum Kitaplar</a></li>
+                        <li><a href="wantreadbook.html">Okumak İstediğim Kitaplar</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="Sidebar-Down">
+                <ul>
+                    <li>
+                        <h4>Telefon</h4>
+                        <p>@Model.Phone</p>
+                        <div class="Underline"></div>
+                    </li>
+
+                    <li>
+                        <h4>E-Posta</h4>
+                        <p>@Model.Email</p>
+                        <div class="Underline"></div>
+                    </li>
+
+                    <li>
+                        <h4>Okul Numarası</h4>
+                        <p>@Model.SchoolNo</p>
+                        <div class="Underline"></div>
+                    </li>
+                </ul>
+
+                <div class="Siderbar-Footer">
+                    <ul>
+                        <li><a href="#">Profilimi Düzenle</a></li>
+                        <li><a href="#">Oturumu Kapat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+
+
+        <div class="ProfileSettings">
+            <p><i class="fa-solid fa-gear" style="color: #000000;"></i> Profil Ayarları</p>
+
+            <form  asp-action="UserEdit" method="post" enctype="multipart/form-data">
+
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-primary" role="alert">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+
+                <div class="Inputs" style="margin-top: 10%; width: 450px;">
+
+                    <!-- Username input -->
+                    <div class="form-outline mb-4">
+                        <input asp-for="UserName" type="text" id="Username" class="form-control p-3" placeholder="Kullanıcı Adı" />
+                        <span class="text-danger" asp-validation-for="UserName"></span>
+                    </div>
+
+                    <!-- FirstName input -->
+                    <div class="form-outline mb-4">
+                        <input asp-for="Firstname" type="text" id="name" class="form-control p-3" placeholder="Ad" />
+                        <span class="text-danger" asp-validation-for="UserName"></span>
+                    </div>
+                    <!-- LastName input -->
+                    <div class="form-outline mb-4">
+                        <input asp-for="Lastname" type="text" id="surname" class="form-control p-3" placeholder="Soyad" />
+                         <span class="text-danger" asp-validation-for="Lastname"></span>
+                    </div>
+
+                    <!-- Phonenumber input -->
+                    <div class="form-outline mb-4">
+                        <input type="number" asp-for="Phone" id="number" class="form-control p-3" placeholder="Telefon Numarası" />
+                        <span class="text-danger" asp-validation-for="Phone"></span>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" asp-for="Email" id="email" class="form-control p-3" placeholder="E-Mail" />
+                        <span class="text-danger" asp-validation-for="Email"></span>
+                    </div
+
+                     <!-- School No input -->
+                    <div class="form-outline mb-4">
+                        <input type="number" asp-for="SchoolNo" id="schoolno" class="form-control p-3" placeholder="Okul Numarası" />
+                        <span class="text-danger" asp-validation-for="SchoolNo"></span>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                       <label asp-for="ProfilePicture"></label>
+                       <input class="form-control" asp-for="ProfilePicture" accept="image/png, image/jpg, image/jpeg" placeholder="Profile Picture">
+                       <span class="text-danger" asp-validation-for="ProfilePicture"></span>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="Form-Button">
+                        <a href="">
+                            <button>Güncelle</button>
+                        </a>
+                    </div>
+                    <!-- Submit button -->
+
+                </div>
+
+            </form>
+        </div>
+    </main>
 </div>

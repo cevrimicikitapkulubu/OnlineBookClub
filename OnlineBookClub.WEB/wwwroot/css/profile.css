@@ -1,0 +1,254 @@
+
+.Sidebar{
+margin-top: 17px;
+ width: 350px;
+ height: 1400px;
+ padding: 60px 80px;
+
+ background-color: var(--body);
+}
+
+.Sidebar-Area{
+    float: right;
+}
+
+.Select-Group{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* | SIDEBAR-UP | */
+
+.Profile{
+font-size:24px;
+font-weight: 600;
+}
+
+
+.Profile img{
+width: 125px;
+height: 125px;
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.SidebarUpLinks{
+    margin-top: 15%;
+}
+
+.SidebarUpLinks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.SidebarUpLinks ul li{
+    list-style: none;
+}
+
+.SidebarUpLinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* | SIDEBAR-UP | */
+
+
+
+
+/* | SIDEBAR-DOWN | */
+
+.Sidebar-Down{
+    margin-top: 40%;
+}
+
+.Sidebar-Down ul li{
+    list-style: none;
+
+    margin-top: 20%;
+}
+
+.Sidebar-Down ul li h4{
+    font-weight: 700;
+}
+
+.Sidebar-Down ul li p{
+    font-size: 16px;
+    margin-top: 3%;
+}
+
+.Underline{
+    background-color: var(--blue);
+    width: 185px;
+    height: 2px;
+}
+
+
+.Siderbar-Footer ul li{
+    margin-top: 10%;
+}
+
+.Siderbar-Footer ul li a{
+    text-decoration: underline;
+    color: black;
+}
+
+.Siderbar-Footer ul{
+    margin-top: 50%;
+}
+/* | SIDEBAR-DOWN | */
+
+
+
+/* | MAIN | */
+
+main{
+    padding: 50px;
+}
+
+.Badges-Area{
+    width: 800px;
+    height: 320px;
+    border-radius: 10px;
+    border: solid 3px rgba(128, 128, 128, 0.479);
+    padding: 10px 30px;
+}
+
+.Badges{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Badge img{ 
+width: 75px;
+height: 65px;
+}
+
+.Badge p{
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+.ReadedBooks{
+    width: 870px;
+    margin-top: 10%;
+}
+
+.BookLine{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(128, 128, 128, 0.479);
+    margin-bottom: 5px;
+}
+
+.ReadedBooksUp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ReadedBooksUp a{
+    text-decoration: none;
+     color: black;
+}
+
+.ReadedBooksDown{
+    margin: auto 0;
+    text-align: center;
+}
+
+.ReadedBooksDown img{
+    width: 260px ;
+    height: 165px;
+}
+
+/* | MAIN | */
+
+
+
+/* | ADD BOOK | */
+.ReadedBooksDown{
+    margin-top: 7%;
+
+}
+
+
+.ReadedBooksDown form input{
+    height: 54px;
+    width: 480px;
+    padding: 10px;
+
+    border: solid 2px gray;
+    border-radius: 50px;
+    border-top-right-radius: 0px;
+
+}
+
+.ReadedBooksDown input::placeholder{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(128, 128, 128, 0.651);
+
+}
+
+.ReadedBooksDown form button{
+    position: relative;
+    right: 10%;
+    height: 58px;
+    width: 105px;
+
+    border: none;
+    background-color: var(--red);
+    border-radius: 30px;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* | ADD BOOK | */
+
+
+
+/* | BOOK CARD | */
+.BookCard{
+    display: flex;
+    padding: 50px;
+}
+
+.BookCardRight{
+    margin-left: 20px;
+    text-align: start;
+    padding: 10px;
+}
+
+.BookCard img{
+    width: 110px;
+    height: 146;
+}
+
+.BookCardRight a{
+    font-size: 20px;
+}
+
+.BookCardRight h2{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #777777;
+}
+
+.BookCardRight p{
+    margin-top: 20px;
+}
+
+/* | BOOK CARD | */
+
+
+/* | PROFILE SETTINGS | */
+.ProfileSettings{
+    width: 800px;
+}
+
+
+/* | PROFILE SETTINGS | */

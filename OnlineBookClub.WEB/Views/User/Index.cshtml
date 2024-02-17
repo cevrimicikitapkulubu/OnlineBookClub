@@ -4,8 +4,6 @@
 }
 @model UserVM
 
-<h1>Welcome, @Model.UserName</h1>
-
 @* <div class="row mt-5">
     <div class="col-md-6 offset-md-3">
 
@@ -34,7 +32,7 @@
     </div>
 </div> *@
 <section>
-    <div class="container">
+    @* <div class="container">
         <div class="row">
             <div class="col-lg-12 mb-4 mb-sm-5">
                 <div class="card card-style1 border-0">
@@ -67,5 +65,153 @@
                 </div>
             </div>
         </div>
+    </div> *@
+
+
+    <div class="Select-Group">
+        <div class="Sidebar">
+            <div class="Sidebar-Area">
+                <div class="Sidebar-Up">
+                    <div class="Profile">
+                        <img src="~/img/userpictures/@Model.ProfilePicture" alt="">
+                        <p>@Model.Firstname @Model.Lastname</p>
+                    </div>
+
+                    <div class="SidebarUpLinks">
+                        <ul>
+                            <li><a href="profile.html">Genel Bakış</a></li>
+                            <li><a href="readedbook.html">Okuduğum Kitaplar</a></li>
+                            <li><a href="wantreadbook.html">Okumak İstediğim Kitaplar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="Sidebar-Down">
+                    <ul>
+                        <li>
+                            <h4>Telefon</h4>
+                            <p>@Model.PhoneNumber</p>
+                            <div class="Underline"></div>
+                        </li>
+
+                        <li>
+                            <h4>E-Posta</h4>
+                            <p>@Model.Email</p>
+                            <div class="Underline"></div>
+                        </li>
+
+                        <li>
+                            <h4>Okul Numarası</h4>
+                            <p>@Model.SchoolNo</p>
+                            <div class="Underline"></div>
+                        </li>
+                    </ul>
+
+                    <div class="Siderbar-Footer">
+                        <ul>
+                            <li><a href="settings.html">Profilimi Düzenle</a></li>
+                            <li><a href="#">Oturumu Kapat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="container">
+            <div class="d-flex flex-column">
+                <div class="Badges-Area">
+                    <h1>Rozetler</h1>
+                    <div class="Badges">
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+
+                        <div class="Badge">
+                            <img src="~/img/ExampleBadge.png" alt="">
+                            <p>İlk Giriş</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ReadedBooks">
+                    <div class="BookLine"></div>
+                    <div class="ReadedBooksUp">
+                        <p><i class="fa-solid fa-bookmark" style="color: #00396f;"></i> OKUDUĞUM KİTAPLAR</p>
+
+                        <a href="#"> <i class="fa-solid fa-circle-plus" style="color: #00396f;"></i> KİTAP EKLE</a>
+                    </div>
+
+                    <div class="ReadedBooksDown">
+                        <img src="~/img/No-Book.png" alt="">
+                        <p>Hiç kitabınız yok. <a href="#">Okuduğunuz bir kitabı ekleyin</a></p>
+                    </div>
+                </div>
+
+                <div class="ReadedBooks">
+                    <div class="BookLine"></div>
+                    <div class="ReadedBooksUp">
+                        <p><i class="fa-solid fa-bookmark" style="color: #00396f;"></i> OKUMAK İSTEDİĞİM KİTALAR</p>
+
+                        <a href="#"> <i class="fa-solid fa-circle-plus" style="color: #00396f;"></i> KİTAP EKLE</a>
+                    </div>
+
+                    <div class="ReadedBooksDown">
+                        <img src="~/img/No-Book.png" alt="">
+                        <p>Hiç kitabınız yok. <a href="#">Okuduğunuz bir kitabı ekleyin</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </section>

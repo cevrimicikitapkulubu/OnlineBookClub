@@ -68,6 +68,17 @@
                     <span class="text-danger" asp-validation-for="PasswordConfirm"></span>
                 </div>
 
+                <!-- SchoolId input -->
+                <select class="form-select" aria-label="Okul Seçiniz" asp-for="SchoolId" asp-items="@ViewBag.SchoolListItems">
+                    
+                </select>
+
+                <!-- Password Confirm input -->
+                <div class="form-outline mb-4">
+                    <input type="number" class="form-control p-3" asp-for="SchoolNo" />
+                    <span class="text-danger" asp-validation-for="SchoolNo"></span>
+                </div>
+
                 <!-- 2 column grid layout for inline styling -->
                 <div class="row mb-4">
                     <div class="col d-flex justify-content-center" style="gap: 26%;">

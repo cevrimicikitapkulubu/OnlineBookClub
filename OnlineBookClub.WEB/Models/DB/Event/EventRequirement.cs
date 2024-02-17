@@ -10,13 +10,13 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         [Key]
         public int EventId { get; set; }
 
-        public int SchoolId { get; set; }
+        public short SchoolId { get; set; }
 
         public short DepartmentId { get; set; }
 
         public byte UserRoleId { get; set; }
 
-        Gender Gender { get; set; } = Gender.E;
+        public bool Gender { get; set; }
 
         //?=========> AUDIT COLUMNS
 
@@ -37,8 +37,6 @@ namespace OnlineBookClub.WEB.Models.DB.Event
         //?=========> REFERANCES
 
         public virtual School School { get; set; }
-
-        public virtual Event Event { get; set; }
 
         public virtual Department Department { get; set; }
     }

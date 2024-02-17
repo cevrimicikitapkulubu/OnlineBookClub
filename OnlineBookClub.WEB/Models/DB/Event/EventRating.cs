@@ -14,7 +14,7 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 
         public string Description { get; set; }
 
-        public DateTimeOffset CREATED_DATE { get; set; }= DateTimeOffset.UtcNow;
+        public DateTimeOffset? CREATED_DATE { get; set; }= DateTimeOffset.UtcNow;
 
         //?=========> REFERANCES
 
