@@ -11,7 +11,7 @@
         "projectName": "OnlineBookClub.WEB",
         "projectPath": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\OnlineBookClub.WEB.csproj",
         "packagesPath": "C:\\Users\\fsahi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fsahi\\Source\\Repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
+        "outputPath": "C:\\Users\\fsahi\\source\\repos\\cevrimicikitapkulubu\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fsahi\\AppData\\Roaming\\NuGet\\NuGet.Config",

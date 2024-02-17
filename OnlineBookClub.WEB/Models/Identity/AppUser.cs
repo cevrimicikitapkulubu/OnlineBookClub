@@ -17,7 +17,7 @@ namespace OnlineBookClub.WEB.Models.Identity
 
         public bool? Gender { get; set; }
 
-        public short? SchoolId { get; set; }
+        public short SchoolId { get; set; }
 
         [MaxLength(78)]
         public string? ProfilePicture { get; set; } = "DefaultUserPicture.jpg";

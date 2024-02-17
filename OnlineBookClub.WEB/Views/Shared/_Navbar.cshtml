@@ -11,8 +11,8 @@
             <li><a href="">Kitap Bul</a></li>
             <li><a href="">Hakkında</a></li>
             <li><a href="">İletişim</a></li>
-            <li><a href="">Etkinlikler</a></li>
-            <li><a href="">Kullanıcılar</a></li>
+            <li><a asp-area="" asp-controller="Event" asp-action="Index">Etkinlikler</a></li>
+            <li><a asp-controller="Home" asp-action="Users">Kullanıcılar</a></li>
 
             <li>
                 <div class="dropdown">
@@ -29,12 +29,14 @@
                         <li><a class="dropdown-item" asp-controller="User" asp-action="UserEdit">Ayarlar</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" asp-controller="User" asp-action="Claims">Claims</a></li>
-                        @if (User.HasClaim(x => x.Type == ClaimTypes.Role && x.Value == "Admin"))
+                        @if (User.HasClaim(ClaimTypes.Role, "Admin"))
                         {
                             <li><a asp-area="Admin" asp-controller="Home" asp-action="Index" class="dropdown-item">Admin Sayfası</a></li>
+                            <li><a asp-area="Admin" asp-controller="Event" asp-action="Index" class="dropdown-item">Etkinlikler</a></li>
                         }
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" asp-controller="User" asp-action="LogOut" asp-route-returnurl="/Home/Index">Çıkış Yap</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" asp-area="" asp-controller="User" asp-action="LogOut" asp-route-returnurl="/Home/Index">Çıkış Yap</a></li>
                     </ul>
                 </div>
             </li>
@@ -53,8 +55,8 @@ else
             <li><a href="#">Kitap Bul</a></li>
             <li><a href="#">Hakkında</a></li>
             <li><a href="#">İletişim</a></li>
-            <li><a href="#">Etkinlikler</a></li>
-            <li><a href="#">Kullanıcılar</a></li>
+            <li><a asp-area="" asp-controller="Event" asp-action="Index">Etkinlikler</a></li>
+            <li><a asp-controller="Home" asp-action="Users">Kullanıcılar</a></li>
         </ul>
 
         <div class="Nav-Buttons">

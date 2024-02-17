@@ -33,6 +33,8 @@ namespace OnlineBookClub.WEB.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(EventVM request)
         {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
             _context.Events.AddAsync(new Models.DB.Event.Event()
             {
                 CREATED_DATE = DateTimeOffset.UtcNow,
@@ -40,9 +42,8 @@ namespace OnlineBookClub.WEB.Areas.Admin.Controllers
                 ISBN = request.ISBN,
                 LocationId = request.LocationId,
                 StartDate = request.StartDate,
-                //CREATED_USER_ID = _userManager.FindByNameAsync(User.Identity.Name).Id,
-                CREATED_USER_ID = "d5af1b61-782a-432d-977f-48d4b5018f16",
-                SchoolId = 1
+                CREATED_USER_ID = user.Id,
+                SchoolId = user.SchoolId
             });
 
             _context.SaveChanges();
