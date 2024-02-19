@@ -1,6 +1,5 @@
 
 .Sidebar{
-margin-top: 17px;
  width: 350px;
  height: 1400px;
  padding: 60px 80px;
@@ -21,6 +20,7 @@ margin-top: 17px;
 /* | SIDEBAR-UP | */
 
 .Profile{
+    text-align:center;
 font-size:24px;
 font-weight: 600;
 }
@@ -102,7 +102,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 /* | MAIN | */
 
-main{
+.Select-Group main {
     padding: 50px;
 }
 
@@ -171,7 +171,6 @@ height: 65px;
 /* | ADD BOOK | */
 .ReadedBooksDown{
     margin-top: 7%;
-
 }
 
 
@@ -225,7 +224,7 @@ height: 65px;
 
 .BookCard img{
     width: 110px;
-    height: 146;
+    height: 146px;
 }
 
 .BookCardRight a{

@@ -1,0 +1,52 @@
+﻿@model UserVM
+
+
+<div class="Sidebar">
+    <div class="Sidebar-Area">
+        <div class="Sidebar-Up">
+            <div class="Profile">
+                <img src="~/img/userpictures/@Model.ProfilePicture" alt="">
+                <p class="mt-5">@Model.Firstname @Model.Lastname</p>
+            </div>
+
+            <div class="SidebarUpLinks">
+                <ul>
+                    <li><a href="profile.html">Genel Bakış</a></li>
+                    <li><a href="readedbook.html">Okuduğum Kitaplar</a></li>
+                    <li><a href="wantreadbook.html">Okumak İstediğim Kitaplar</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="Sidebar-Down">
+            <ul>
+                <li>
+                    <h4>Telefon</h4>
+                    <p>@Model.PhoneNumber</p>
+                    <div class="Underline"></div>
+                </li>
+
+                <li>
+                    <h4>E-Posta</h4>
+                    <p>@Model.Email</p>
+                    <div class="Underline"></div>
+                </li>
+
+                <li>
+                    <h4>Okul Numarası</h4>
+                    <p>@Model.SchoolNo</p>
+                    <div class="Underline"></div>
+                </li>
+            </ul>
+
+            <div class="Siderbar-Footer">
+                <ul>
+                    <li><a href="settings.html">Profilimi Düzenle</a></li>
+                    <li><a href="#">Oturumu Kapat</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
