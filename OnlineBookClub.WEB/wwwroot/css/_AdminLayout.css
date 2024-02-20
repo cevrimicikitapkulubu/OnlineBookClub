@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+  --blue: #00396F;
+  --red:#AB0000;
+  --crack-white:#d9d9d98f;
+  --body:#F8FBFE;
+}
+
+
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+.offcanvas-body ul{
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+}
+
+.offcanvas-body ul{
+  margin-top: 30px;
+}
+
+.offcanvas-body li{
+  list-style: none;
+}
+
+.offcanvas-body li a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.offcanvas-body li i{
+  font-size: 45px;
+  margin-right: 10px;
+}
+
+/* Header */
+
+.offcanvas-header p{
+  color: black;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+@media screen{
+  body .container{
+    max-width: 1700px;
+  }
+}
+/* Header */
+
+/* Search And Button */
+
+.SidebarNav{
+  gap: 67%;
+}
+.SidebarNav form input{
+  height: 44px;
+  width: 396px;
+  border: solid 2px gray;
+  border-radius: 50px;
+  border-top-right-radius: 0px;
+
+}
+
+.SidebarNav input::placeholder{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(128, 128, 128, 0.651);
+
+}
+
+.SidebarNav form button{
+  position: relative;
+  right: 14%;
+  height: 50px;
+  width: 105px;
+
+  border: none;
+  background-color: var(--red);
+  border-radius: 30px;
+  color:white;
+  font-size: 20px;
+  font-weight: 600;
+}
