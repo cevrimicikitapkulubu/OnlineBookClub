@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineBookClub.WEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a79b1263d41926715c8cb214efe65e3b541c4fd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f5911b8583ef7a11458ce09379569f6e7334b4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineBookClub.WEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineBookClub.WEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

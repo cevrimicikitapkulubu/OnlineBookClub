@@ -2016,6 +2016,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\styleImages\SignUp-Image.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\userpictures\07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>OnlineBookClub.WEB</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/OnlineBookClub.WEB</BasePath>
+      <RelativePath>img/userpictures/07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\userpictures\07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\userpictures\66f59b4e-b658-40cd-9a20-6e6afbc07c37.png))">
       <SourceType>Package</SourceType>
       <SourceId>OnlineBookClub.WEB</SourceId>

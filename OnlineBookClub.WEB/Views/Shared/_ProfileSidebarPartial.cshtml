@@ -1,11 +1,15 @@
-﻿@model UserVM
+﻿@using System.Security.Claims
+@model UserVM
 
+@{
+    var userPicture = User.Claims.FirstOrDefault(x => x.Type == "ProfilePicture") != null ? User.Claims.FirstOrDefault(x => x.Type == "ProfilePicture").Value : "DefaultUserPicture.jpg";
+}
 
 <div class="Sidebar">
     <div class="Sidebar-Area">
         <div class="Sidebar-Up">
             <div class="Profile">
-                <img src="~/img/userpictures/@Model.ProfilePicture" alt="">
+                <img src="~/img/userpictures/@userPicture" alt="">
                 <p class="mt-5">@Model.Firstname @Model.Lastname</p>
             </div>
 

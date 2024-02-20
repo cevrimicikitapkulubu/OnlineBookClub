@@ -69,13 +69,13 @@
                 </div>
 
                 <!-- SchoolId input -->
-                <select class="form-select" aria-label="Okul Seçiniz" asp-for="SchoolId" asp-items="@ViewBag.SchoolListItems">
-                    
-                </select>
+                <div class="form-outline mb-4">
+                    <select class="form-select" aria-label="Okul Seçiniz" asp-for="SchoolId" asp-items="@ViewBag.SchoolListItems"></select>
+                </div>
 
                 <!-- Password Confirm input -->
                 <div class="form-outline mb-4">
-                    <input type="number" class="form-control p-3" asp-for="SchoolNo" />
+                    <input type="number" class="form-control p-3" maxlength="8" asp-for="SchoolNo" />
                     <span class="text-danger" asp-validation-for="SchoolNo"></span>
                 </div>
 

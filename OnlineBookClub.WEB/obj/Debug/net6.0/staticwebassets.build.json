@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fnHXbeRNbByUhCmGm9qJ9fuoReRUY5lh3sTb3Uo8WLE=",
+  "Hash": "m1ZWExhnPwlVXenrc1yGmECalTNtMi8t5Q0p/cjEOSM=",
   "Source": "OnlineBookClub.WEB",
   "BasePath": "_content/OnlineBookClub.WEB",
   "Mode": "Default",
@@ -2447,6 +2447,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\styleImages\\SignUp-Image.png"
+    },
+    {
+      "Identity": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg",
+      "SourceId": "OnlineBookClub.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\",
+      "BasePath": "_content/OnlineBookClub.WEB",
+      "RelativePath": "img/userpictures/07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\userpictures\\07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg"
     },
     {
       "Identity": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\66f59b4e-b658-40cd-9a20-6e6afbc07c37.png",

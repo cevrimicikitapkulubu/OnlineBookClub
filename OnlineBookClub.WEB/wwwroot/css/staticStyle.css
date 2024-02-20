@@ -44,16 +44,16 @@ nav ul li a{
     text-decoration: none;
 }
 
-.Nav-Buttons button{
+.Nav-Button{
     font-weight: 600;
     font-size: 16px;
 
     border-radius: 60px;
     border: none;
-    padding: 11px 24px;
+    padding: 12px 24px;
     color: #ffff;
     background-color: var(--red);
-    margin-top: 7%;
+    margin-bottom: 12px;
 }
 
 .Nav-Logo{

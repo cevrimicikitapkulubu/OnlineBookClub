@@ -1,19 +1,19 @@
 ﻿@using System.Security.Claims
 
-@if (User.Identity!.IsAuthenticated)
-{
-    <nav>
-        <div class="Nav-Logo">
-            <a asp-controller="Home" asp-action="Index"><p>LOGO</p></a>
-        </div>
+<nav>
+    <div class="Nav-Logo">
+        <a asp-controller="Home" asp-action="Index"><p>LOGO</p></a>
+    </div>
 
-        <ul>
-            <li><a href="">Kitap Bul</a></li>
-            <li><a href="">Hakkında</a></li>
-            <li><a href="">İletişim</a></li>
-            <li><a asp-area="" asp-controller="Event" asp-action="Index">Etkinlikler</a></li>
-            <li><a asp-controller="Home" asp-action="Users">Kullanıcılar</a></li>
+    <ul>
+        <li><a href="">Kitap Bul</a></li>
+        <li><a href="">Hakkında</a></li>
+        <li><a href="">İletişim</a></li>
+        <li><a asp-area="" asp-controller="Event" asp-action="Index">Etkinlikler</a></li>
+        <li><a asp-area="" asp-controller="Home" asp-action="Users">Kullanıcılar</a></li>
 
+        @if (User.Identity!.IsAuthenticated)
+        {
             <li>
                 <div class="dropdown">
                     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -24,49 +24,32 @@
                         @User.Identity.Name
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" asp-controller="User" asp-action="Index">Profil</a></li>
-                        <li><a class="dropdown-item" asp-controller="User" asp-action="PasswordChange">Şifreni Değiştir</a></li>
-                        <li><a class="dropdown-item" asp-controller="User" asp-action="UserEdit">Ayarlar</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-controller="User" asp-action="Index">Profil</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-controller="User" asp-action="PasswordChange">Şifreni Değiştir</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-controller="User" asp-action="UserEdit">Ayarlar</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" asp-controller="User" asp-action="Claims">Claims</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-controller="User" asp-action="Claims">Claims</a></li>
                         @if (User.HasClaim(ClaimTypes.Role, "Admin"))
                         {
                             <li><a asp-area="Admin" asp-controller="Home" asp-action="Index" class="dropdown-item">Admin Sayfası</a></li>
-                            <li><a asp-area="Admin" asp-controller="Event" asp-action="Index" class="dropdown-item">Etkinlikler</a></li>
                         }
-                        <li><hr class="dropdown-divider"></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" asp-area="" asp-controller="User" asp-action="LogOut" asp-route-returnurl="/Home/Index">Çıkış Yap</a></li>
                     </ul>
                 </div>
             </li>
-        </ul>
-    </nav>
-}
+        }
+        else
+        {
+            <li>
+                <a asp-controller="Home" asp-action="LogIn">
+                    <a asp-controller="Home" asp-action="LogIn" class="Nav-Button">Giriş Yap</a>
+                </a>
 
-else
-{
-    <nav>
-        <div class="Nav-Logo">
-            <a asp-controller="Home" asp-action="Index"><p>LOGO</p></a>
-        </div>
-
-        <ul>
-            <li><a href="#">Kitap Bul</a></li>
-            <li><a href="#">Hakkında</a></li>
-            <li><a href="#">İletişim</a></li>
-            <li><a asp-area="" asp-controller="Event" asp-action="Index">Etkinlikler</a></li>
-            <li><a asp-controller="Home" asp-action="Users">Kullanıcılar</a></li>
-        </ul>
-
-        <div class="Nav-Buttons">
-            <a asp-controller="Home" asp-action="LogIn">
-                <button>Giriş Yap</button>
-            </a>
-
-            <a asp-controller="Home" asp-action="SignUp">
-                <button>Kayıt Ol</button>
-            </a>
-        </div>
-    </nav>
-}
+                <a asp-controller="Home" asp-action="SignUp">
+                    <a asp-controller="Home" asp-action="SignUp" class="Nav-Button">Kayıt Ol</a>
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
