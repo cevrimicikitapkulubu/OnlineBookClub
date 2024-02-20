@@ -206,6 +206,65 @@ namespace OnlineBookClub.WEB.Data
 					);
 				}
 
+				var roleId = Guid.NewGuid().ToString();
+
+				if (!context.Roles.Any())
+				{
+					context.Roles.Add(new AppRole()
+					{
+						Id = roleId,
+						Name = "Admin",
+						NormalizedName = "Admin".ToUpper(),
+						IS_ACTIVE = true,
+						IS_DELETED = false,
+					});
+				}
+
+
+				var userId = Guid.NewGuid().ToString();
+
+				if (!context.Users.Any())
+				{
+					var newUser = new AppUser()
+					{
+						Id = userId,
+						Firstname = "Fatih",
+						Lastname = "Şahinbaş",
+						SchoolId = context.Schools.FirstOrDefault().Id,
+						SchoolNo = "0000",
+						AccessFailedCount = 0,
+						EmailConfirmed = false,
+						Email = "cevrimicikitapkulubu@gmail.com",
+						NormalizedEmail = "cevrimicikitapkulubu@gmail.com".ToUpper(),
+						Gender = true,
+						LockoutEnabled = false,
+						UserName = "FSahinbas",
+						NormalizedUserName = "FSahinbas".ToUpper(),
+						PhoneNumber = "1234567890",
+						PhoneNumberConfirmed = false,
+						TwoFactorEnabled = false,
+					};
+
+					var passwordHasher = new PasswordHasher<AppUser>();
+					newUser.PasswordHash = passwordHasher.HashPassword(newUser, "ExamplePass01&A");
+					var result = passwordHasher.VerifyHashedPassword(newUser, newUser.PasswordHash, "ExamplePass01&A");
+
+					context.Users.Add(newUser);
+				}
+
+				context.SaveChanges();
+
+				if (!context.UserRoles.Any())
+				{
+					context.UserRoles.Add(new IdentityUserRole<string>()
+					{
+						RoleId = roleId,
+						UserId = userId
+					});
+				}
+
+
+
 				context.SaveChanges();
 			}
 		}

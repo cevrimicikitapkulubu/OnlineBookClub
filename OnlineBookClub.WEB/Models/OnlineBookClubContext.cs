@@ -11,7 +11,6 @@ namespace OnlineBookClub.WEB.Models
 	{
 		protected override void OnModelCreating(ModelBuilder builder)
 		{
-
 			//!========| EVENT |========
 
 			//? EVENT PARTICIPANT
