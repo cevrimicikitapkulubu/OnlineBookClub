@@ -9,7 +9,7 @@
 }
 
 <div class="Select-Group">
-    @await Html.PartialAsync("_ProfileSidebarPartial");
+    @await Html.PartialAsync("_ProfileSidebarPartial", ViewBag.UserVM as UserVM);
 
     <main>
 

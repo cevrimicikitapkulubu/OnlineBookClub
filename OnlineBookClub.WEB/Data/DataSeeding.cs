@@ -183,7 +183,10 @@ namespace OnlineBookClub.WEB.Data
 					);
 				}
 
+
 				//? ===============| END of Rating Add |===============
+
+				context.SaveChanges();
 
 				//? ===============| Achievement ADD |===============
 

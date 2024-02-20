@@ -101,7 +101,25 @@ namespace OnlineBookClub.WEB.Controllers
                 SchoolNo = currentUser.SchoolNo!
             };
 
-            return View(model);
+			UserVM userVM = new UserVM
+			{
+				UserName = currentUser.UserName,
+				Email = currentUser.Email,
+				PhoneNumber = currentUser.PhoneNumber,
+				Department = _context.Departments.FirstOrDefault(x => x.Id == currentUser.DepartmentId),
+				Firstname = currentUser.Firstname,
+				Lastname = currentUser.Lastname,
+				Gender = currentUser.Gender,
+				Level = _context.Levels.FirstOrDefault(x => x.LevelId == currentUser.LevelId),
+				Point = currentUser.Point,
+				School = _context.Schools.FirstOrDefault(x => x.Id == currentUser.SchoolId),
+				SchoolNo = currentUser.SchoolNo,
+				ProfilePicture = string.IsNullOrEmpty(currentUser.ProfilePicture) ? "DefaultUserPicture.jpg" : currentUser.ProfilePicture
+			};
+
+            ViewBag.UserVM = userVM;
+
+			return View(model);
         }
 
         [HttpPost]
