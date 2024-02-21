@@ -1,0 +1,92 @@
+﻿@model UserVM
+
+    <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+            <tr>
+                <th class="fw-bold fs-6">#</th>
+                <th class="fw-bold fs-6">Kullanıcı Adı</th>
+                <th class="fw-bold fs-6">Email</th>
+                <th class="fw-bold fs-6">Ad</th>
+                <th class="fw-bold fs-6">Soyad</th>
+                <th class="fw-bold fs-6">Departman</th>
+                <th class="fw-bold fs-6">Cinsiyet</th>
+                <th class="fw-bold fs-6">School</th>
+                <th class="fw-bold fs-6">Profil Resmi</th>
+                <th class="fw-bold fs-6">Okul Numarası</th>
+                <th class="fw-bold fs-6">Puan</th>
+                <th class="fw-bold fs-6">Sil</th>
+                <th class="fw-bold fs-6">Değiştir</th>
+            </tr>
+        </thead>
+        <tbody>
+                 @foreach (var item in Model.Users)
+                {
+            <tr>
+                    <td>
+                        @item.Id
+                    </td>
+
+                    <td>
+                        @item.UserName
+                    </td>
+
+
+                     <td>
+                       @item.Email
+                     </td>
+
+
+                    <td>@item.Firstname</td>
+
+
+                    <td>
+                        @item.Lastname
+                    </td>
+
+                    <td>
+                        @item.Department
+                    </td>
+
+                    <td>
+                    @if (item.Gender == false)
+                    {
+                        <p>Kız</p>
+                    }
+
+                    else
+                    {
+                        <p>Erkek</p>
+                    }
+
+                    </td>
+
+                    <td>
+                        @item.SchoolId
+                    </td>
+
+                    <td>
+                                 <img src="~/img/userpictures/@Model.ProfilePicture"
+                                 alt=""
+                                 style="width: 40px; height: 40px"
+                                 class="rounded-circle" />
+                    </td>
+
+                    <td>
+                        @item.SchoolNo
+                    </td>
+
+                     <td>
+                        @item.Point
+                    </td>
+
+
+                    <td><button type="button" class="btn btn-danger" data-mdb-ripple-init>Sil</button></td>
+
+                    <td><button type="button" class="btn btn-warning" data-mdb-ripple-init>Değiştir</button></td>
+
+            </tr>
+            }
+
+
+        </tbody>
+    </table>

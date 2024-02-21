@@ -10,7 +10,10 @@
         <div class="Sidebar-Up">
             <div class="Profile">
                 <img src="~/img/userpictures/@userPicture" alt="">
-                <p class="mt-5">@Model.Firstname @Model.Lastname</p>
+                <div class="d-flex gap-2">
+                    <p class="mt-5">@Model.Firstname</p>
+                    <p class="mt-5">@Model.Lastname</p>
+                </div>
             </div>
 
             <div class="SidebarUpLinks">
