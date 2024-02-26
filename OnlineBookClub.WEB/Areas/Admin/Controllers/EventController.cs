@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OnlineBookClub.WEB.Areas.Admin.ViewModels;
 using OnlineBookClub.WEB.Controllers;
 using OnlineBookClub.WEB.Models;
 using OnlineBookClub.WEB.Models.DB.Event;
 using OnlineBookClub.WEB.Models.Identity;
+using OnlineBookClub.WEB.ViewModels.Auth;
 
 namespace OnlineBookClub.WEB.Areas.Admin.Controllers
 {
@@ -49,6 +51,48 @@ namespace OnlineBookClub.WEB.Areas.Admin.Controllers
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Admin.Controllers.EventController.Index));
+        }
+
+        public async Task<IActionResult> Detail(int id)
+        {
+            Areas.Admin.ViewModels.EventDetail eventDetail = new Areas.Admin.ViewModels.EventDetail() 
+            {
+                Event = _context.Events
+                .Include(x => x.School)
+                .Include(x => x.EventParticipants)
+                .Include(x => x.EventRatings)
+                .Include(x => x.EventSubjects)
+                .Include(x => x.Location)
+                .FirstOrDefault(x => x.Id == id)!,
+
+                EventRatings = _context.EventRatings.Where(x => x.EventId == id).ToList(),
+                EventRequirements = _context.EventRequirements.Where(x => x.EventId == id).ToList(),
+                EventSubjects = _context.EventSubjects.Where(x => x.EventId == id).ToList(),
+            };
+
+            List<UserRating> users = new List<UserRating>();
+            foreach (var user in _context.Users.ToList())
+            {
+                foreach (var eventParticipant in _context.EventParticipants.Include(x => x.Rating))
+                {
+                    if (eventParticipant.UserId == user.Id)
+                    {
+                        UserRating rating = new UserRating()
+                        {
+                            UserId = user.Id,
+                            Description = eventParticipant.Description,
+                            Rate = eventParticipant.Rating.Rate,
+                            User = user
+                        };
+
+                        users.Add(rating);
+                    }
+                }
+            }
+
+            eventDetail.UserRatings = users;
+
+            return View(eventDetail);
         }
     }
 }

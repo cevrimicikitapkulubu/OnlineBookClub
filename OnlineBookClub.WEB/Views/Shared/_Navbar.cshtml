@@ -20,7 +20,7 @@
                         @{
                             string userpp = @User.Claims.FirstOrDefault(x => x.Type == "ProfilePicture") != null ? User.Claims.First(x => x.Type == "ProfilePicture").Value : "DefaultUserPicture.jpg";
                         }
-                        <img src="~/img/userpictures/@userpp" alt="mdo" width="32" height="32" class="rounded-circle">
+                        <img src="~/img/userpictures/@userpp" alt="mdo" width="32" height="32" class="rounded-circle" style="object-fit: cover;">
                         @User.Identity.Name
                     </a>
                     <ul class="dropdown-menu">
