@@ -76,13 +76,13 @@
                     </td>
 
                     <td>
-                        @if(item.IS_ACTIVE==true){
-                            <span class="badge badge-success rounded-pill d-inline">Aktif</span>
+                        @if(item.StartDate < DateTime.UtcNow){
+                            <span class="badge badge-danger rounded-pill d-inline">Pasif</span>
                         }
 
                         else
                         {
-                            <span class="badge badge-danger rounded-pill d-inline">Pasif</span>
+                            <span class="badge badge-success rounded-pill d-inline">Aktif</span>
                     }
 
                     </td>
@@ -93,9 +93,13 @@
                         </div>
                     </td>
 
-                    <td><button type="button" class="btn btn-danger" data-mdb-ripple-init>Sil</button></td>
+                    <td>@Html.ActionLink("Sil", "Delete", new { id = item.Id }, new { @class = "btn btn-danger", onclick = "return confirm('Gerçekten silmek istiyor musunuz?')" })</td>
 
-                    <td><button type="button" class="btn btn-warning" data-mdb-ripple-init>Değiştir</button></td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal" style="float:right;">
+                            Değiştir
+                        </button>
+                    </td>
 
                     <td><a class="btn btn-success" asp-action="Detail" asp-route-id="@item.Id">Detay</a></td>
             </tr>
@@ -106,7 +110,7 @@
     </table>
 
 
-    <!-- Modal -->
+    <!-- Create Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -150,6 +154,59 @@
                             </div>
 
                         </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal Et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Update Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="updateModalLabel">Etkinlik Oluşturma</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form method="post" asp-controller="Event" asp-action="Update">
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="mt-2">
+                                <div class="form-group mb-4">
+                                    <label for="SelectBook" class="form-label">Kitap Seçimi</label>
+                                    <select asp-for="ISBN" class="form-control p-3" id="SelectBook">
+                                        <option value="1ASDF">Nutuk</option>
+                                        <option value="2ASDF">Ateşten Gömlek</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="Title" class="form-label">Başlık</label>
+                                    <input asp-for="Title" class="form-control" placeholder="Başlık" id="Title" />
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="SelectLocation" class="form-label">Lokasyon</label>
+                                    <select asp-for="LocationId" class="form-control p-3" id="SelectLocation">
+                                        <option value="1">Okul Kütüphanesi</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="StartDate" class="form-label">Başlangıç Tarihi</label>
+                                    <input type="date" asp-for="StartDate" value="@DateTime.Now" class="form-control" id="StartDate" />
+                                </div>
+
+                                <input type="submit" class="btn btn-success" value="Değiştir" />
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal Et</button>
