@@ -5,14 +5,16 @@ namespace OnlineBookClub.WEB.Models.DB.Event
 {
     public class EventRating
     {
+        public int Id { get; set; }
+
         public int EventId  { get; set; }
 
-        public int UserId { get; set; }
+        public string UserId { get; set; } = null!;
 
         [Range(1,5)]
         public short Rating { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         public DateTimeOffset? CREATED_DATE { get; set; }= DateTimeOffset.UtcNow;
 

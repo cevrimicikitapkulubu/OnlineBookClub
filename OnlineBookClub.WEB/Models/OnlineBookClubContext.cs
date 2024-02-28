@@ -20,11 +20,6 @@ namespace OnlineBookClub.WEB.Models
 				table.UserId
 			});
 
-			builder.Entity<EventRating>().HasKey(table => new {
-				table.EventId,
-				table.UserId
-			});
-
 
 			//!========| CONST |========
 

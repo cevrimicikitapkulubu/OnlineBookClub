@@ -1,779 +1,779 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\OnlineBookClub.WEB.bundle.scp.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\OnlineBookClub.WEB.bundle.scp.css",
       "PackagePath": "staticwebassets\\OnlineBookClub.WEB.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\css\\style.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\apple-touch-icon.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\assets\\img\\apple-touch-icon.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\favicon.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\favicon.png",
       "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-1.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-2.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-3.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-4.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-5.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-6.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-7.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-8.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-9.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-9.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-9.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-details-1.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-details-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-details-1.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-details-2.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-details-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-details-2.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-details-3.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\portfolio\\portfolio-details-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-details-3.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\slide\\slide-1.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\slide\\slide-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slide\\slide-1.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\slide\\slide-2.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\slide\\slide-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slide\\slide-2.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\slide\\slide-3.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\slide\\slide-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slide\\slide-3.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-1.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\team-1.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-2.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\team-2.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-3.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\team-3.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-4.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\team\\team-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\team-4.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-1.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-1.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-2.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-2.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-3.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-3.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-4.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-4.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-5.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\testimonials\\testimonials-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-5.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\why-us.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\img\\why-us.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\why-us.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\js\\main.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\scss\\Readme.txt",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\scss\\Readme.txt",
       "PackagePath": "staticwebassets\\assets\\scss\\Readme.txt"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\animate.css\\animate.compat.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\animate.css\\animate.compat.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\animate.css\\animate.compat.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\animate.css\\animate.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\animate.css\\animate.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\animate.css\\animate.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\animate.css\\animate.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\animate.css\\animate.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\animate.css\\animate.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\aos\\aos.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\aos\\aos.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\aos\\aos.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\aos\\aos.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\animations.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\animations.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\animations.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\boxicons.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\boxicons.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\transformations.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\css\\transformations.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\css\\transformations.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.eot",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.eot"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.svg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.svg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.woff"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\isotope-layout\\isotope.pkgd.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\php-email-form\\validate.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\purecounter\\purecounter_vanilla.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.eot",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.eot"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.less",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.less",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.less"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.svg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.svg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.symbol.svg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.symbol.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.symbol.svg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.ttf",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.ttf"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.woff"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff2",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\remixicon\\remixicon.woff2"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js.map",
       "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\_AdminLayout.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\_AdminLayout.css",
       "PackagePath": "staticwebassets\\css\\_AdminLayout.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\loginAndSignUp.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\loginAndSignUp.css",
       "PackagePath": "staticwebassets\\css\\loginAndSignUp.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\profile.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\profile.css",
       "PackagePath": "staticwebassets\\css\\profile.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\staticStyle.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\css\\staticStyle.css",
       "PackagePath": "staticwebassets\\css\\staticStyle.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\ExampleBadge.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\ExampleBadge.png",
       "PackagePath": "staticwebassets\\img\\ExampleBadge.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\No-Book.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\No-Book.png",
       "PackagePath": "staticwebassets\\img\\No-Book.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\No-ProfilePicture.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\No-ProfilePicture.jpg",
       "PackagePath": "staticwebassets\\img\\No-ProfilePicture.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\Default_AchievementImage.webp",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\Default_AchievementImage.webp",
       "PackagePath": "staticwebassets\\img\\achievemenImages\\Default_AchievementImage.webp"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\FiveEventJoin.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\achievemenImages\\FiveEventJoin.jpg",
       "PackagePath": "staticwebassets\\img\\achievemenImages\\FiveEventJoin.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\books\\9789944888349-us.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\books\\9789944888349-us.jpg",
       "PackagePath": "staticwebassets\\img\\books\\9789944888349-us.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\styleImages\\Login-Image.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\styleImages\\Login-Image.png",
       "PackagePath": "staticwebassets\\img\\styleImages\\Login-Image.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\styleImages\\SignUp-Image.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\styleImages\\SignUp-Image.png",
       "PackagePath": "staticwebassets\\img\\styleImages\\SignUp-Image.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg",
       "PackagePath": "staticwebassets\\img\\userpictures\\07699d99-df71-4a7b-8d1e-f92ad514cbfe.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\66f59b4e-b658-40cd-9a20-6e6afbc07c37.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\66f59b4e-b658-40cd-9a20-6e6afbc07c37.png",
       "PackagePath": "staticwebassets\\img\\userpictures\\66f59b4e-b658-40cd-9a20-6e6afbc07c37.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\7009748d-2630-46a7-bdc6-76ed812e0849.png",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\7009748d-2630-46a7-bdc6-76ed812e0849.png",
       "PackagePath": "staticwebassets\\img\\userpictures\\7009748d-2630-46a7-bdc6-76ed812e0849.png"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\DefaultUserPicture.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\DefaultUserPicture.jpg",
       "PackagePath": "staticwebassets\\img\\userpictures\\DefaultUserPicture.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\bd25988e-128d-49cb-bc92-cd3606157880.jpg",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\bd25988e-128d-49cb-bc92-cd3606157880.jpg",
       "PackagePath": "staticwebassets\\img\\userpictures\\bd25988e-128d-49cb-bc92-cd3606157880.jpg"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\chart1.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\chart1.js",
       "PackagePath": "staticwebassets\\js\\chart1.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\chart2.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\chart2.js",
       "PackagePath": "staticwebassets\\js\\chart2.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\event.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\event.js",
       "PackagePath": "staticwebassets\\js\\event.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\LulQu\\source\\repos\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

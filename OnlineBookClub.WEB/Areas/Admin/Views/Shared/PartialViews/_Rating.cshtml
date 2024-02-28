@@ -1,0 +1,16 @@
+﻿@model RatingVM
+
+<input type="hidden" asp-for="EventId" />
+<input type="hidden" asp-for="UserId" />
+<div>
+    <div>
+        <div>
+            <input type="radio" asp-for="Rate" value="1" />
+            <input type="radio" asp-for="Rate" value="2" />
+            <input type="radio" asp-for="Rate" value="3" />
+            <input type="radio" asp-for="Rate" value="4" />
+            <input type="radio" asp-for="Rate" value="5" />
+        </div>
+    </div>
+    <a href="#">Change Rate</a>
+</div>

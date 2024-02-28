@@ -12,7 +12,7 @@
             @item.User.UserName
             <strong>RATE: @item.Rate</strong>
             <small>@item.Description</small>
-            <a href="#">Change Rate</a>
+            @await Html.PartialAsync("~/Areas/Admin/Views/Shared/PartialViews/_Rating.cshtml", new RatingVM() { EventId = Model.Event.Id, Rate = item.Rate, UserId = item.UserId })
         </li>
     }
 </ul>

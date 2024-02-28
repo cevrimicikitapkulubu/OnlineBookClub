@@ -53,17 +53,17 @@ namespace OnlineBookClub.WEB.Areas.Admin.Controllers
             return RedirectToAction(nameof(Admin.Controllers.EventController.Index));
         }
 
-        public async Task<IActionResult> Detail(int id)
+        public IActionResult Detail(int id)
         {
-            Areas.Admin.ViewModels.EventDetail eventDetail = new Areas.Admin.ViewModels.EventDetail() 
+            Areas.Admin.ViewModels.EventDetail eventDetail = new Areas.Admin.ViewModels.EventDetail()
             {
                 Event = _context.Events
-                .Include(x => x.School)
-                .Include(x => x.EventParticipants)
-                .Include(x => x.EventRatings)
-                .Include(x => x.EventSubjects)
-                .Include(x => x.Location)
-                .FirstOrDefault(x => x.Id == id)!,
+               .Include(x => x.School)
+               .Include(x => x.EventParticipants)
+               .Include(x => x.EventRatings)
+               .Include(x => x.EventSubjects)
+               .Include(x => x.Location)
+               .FirstOrDefault(x => x.Id == id),
 
                 EventRatings = _context.EventRatings.Where(x => x.EventId == id).ToList(),
                 EventRequirements = _context.EventRequirements.Where(x => x.EventId == id).ToList(),
@@ -93,6 +93,12 @@ namespace OnlineBookClub.WEB.Areas.Admin.Controllers
             eventDetail.UserRatings = users;
 
             return View(eventDetail);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Detail(EventVM request)
+        {
+            return View();
         }
 
 
