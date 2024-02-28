@@ -20,8 +20,8 @@ namespace AspNetCoreIdentityApp.Extentisons
                 //User Require Some Options
                 options.User.RequireUniqueEmail = true;
                 options.User.AllowedUserNameCharacters = "qwertyuıopasdfghjklizxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890_";
-                
-                
+
+
                 //Password Require Some Options
                 options.Password.RequiredLength = 10;
                 options.Password.RequireLowercase = true;

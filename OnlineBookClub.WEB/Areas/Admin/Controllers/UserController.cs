@@ -30,5 +30,15 @@ namespace OnlineBookClub.WEB.Areas.Admin.Controllers
 
             return View(model);
         }
+
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            var users = _context.Users.FirstOrDefault(x => x.Id == id);
+            _context.Users.Remove(users);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Admin.Controllers.UserController.Index));
+        }
     }
 }

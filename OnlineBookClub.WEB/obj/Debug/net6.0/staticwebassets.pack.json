@@ -521,12 +521,20 @@
       "PackagePath": "staticwebassets\\img\\userpictures\\66f59b4e-b658-40cd-9a20-6e6afbc07c37.png"
     },
     {
+      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\7009748d-2630-46a7-bdc6-76ed812e0849.png",
+      "PackagePath": "staticwebassets\\img\\userpictures\\7009748d-2630-46a7-bdc6-76ed812e0849.png"
+    },
+    {
       "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\DefaultUserPicture.jpg",
       "PackagePath": "staticwebassets\\img\\userpictures\\DefaultUserPicture.jpg"
     },
     {
       "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\bd25988e-128d-49cb-bc92-cd3606157880.jpg",
       "PackagePath": "staticwebassets\\img\\userpictures\\bd25988e-128d-49cb-bc92-cd3606157880.jpg"
+    },
+    {
+      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\event.js",
+      "PackagePath": "staticwebassets\\js\\event.js"
     },
     {
       "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\site.js",

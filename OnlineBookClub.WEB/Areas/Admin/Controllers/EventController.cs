@@ -119,33 +119,62 @@ namespace OnlineBookClub.WEB.Areas.Admin.Controllers
 
 
         // |Update Method|
-        [HttpPost]
-        public async Task<IActionResult> Update(EventVM eventvm)
-        {
-            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+        //[HttpPost]
+        //public async Task<IActionResult> Update(EventVM eventvm)
+        //{
+        //    var user = await _userManager.FindByNameAsync(User.Identity.Name);
 
-            Event events = new Event()
-            {
-                Id = eventvm.Id,
-                CREATED_DATE = eventvm.CREATED_DATE,
-                Title = eventvm.Title,
-                ISBN = eventvm.ISBN,
-                LocationId = eventvm.LocationId,
-                StartDate = eventvm.StartDate,
-                CREATED_USER_ID = user.Id,
-                SchoolId = user.SchoolId
-            };
+        //    Event events = new Event()
+        //    {
+        //        Id = eventvm.Id,
+        //        CREATED_DATE = eventvm.CREATED_DATE,
+        //        Title = eventvm.Title,
+        //        ISBN = eventvm.ISBN,
+        //        LocationId = eventvm.LocationId,
+        //        StartDate = eventvm.StartDate,
+        //        CREATED_USER_ID = user.Id,
+        //        SchoolId = user.SchoolId
+        //    };
 
-            if (ModelState.IsValid)
-            {
-                _context.Events.Update(events);
-                _context.SaveChanges();
-                return RedirectToAction("Index", _context.Events.ToList());
-            }
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Events.Update(events);
+        //        _context.SaveChanges();
+        //        return RedirectToAction("Index", _context.Events.ToList());
+        //    }
 
-            _context.SaveChanges();
+        //    _context.SaveChanges();
 
-            return View(eventvm);
-        }
+        //    return View(eventvm);
+        //}
+
+
+
+        //public JsonResult GetEvents()
+        //{
+        //    var events = _context.Events.ToList();
+        //    return Json(events);
+        //}
+
+
+        //[HttpGet]
+        //public JsonResult Edit(int id)
+        //{
+        //    var events = _context.Events.FirstOrDefault(x => x.Id == id);
+        //    return Json(events);
+        //}
+
+        //[HttpPost]
+        //public JsonResult Update(Event model)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Events.Update(model);
+        //        _context.SaveChanges();
+        //        return Json("Event details updated.");
+        //    }
+
+        //    return Json("Model State Validation Failed.");
+        //}
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I/0bpVuFhA+3Ac2a5hdBnYFVRXaUIVimxOU9o4IdTaw=",
+  "Hash": "p2unS0C93jet9cz/0b8JNw4IoVKmKj/jVO/F0oNBC6o=",
   "Source": "OnlineBookClub.WEB",
   "BasePath": "_content/OnlineBookClub.WEB",
   "Mode": "Default",
@@ -2506,6 +2506,25 @@
       "OriginalItemSpec": "wwwroot\\img\\userpictures\\66f59b4e-b658-40cd-9a20-6e6afbc07c37.png"
     },
     {
+      "Identity": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\7009748d-2630-46a7-bdc6-76ed812e0849.png",
+      "SourceId": "OnlineBookClub.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\",
+      "BasePath": "_content/OnlineBookClub.WEB",
+      "RelativePath": "img/userpictures/7009748d-2630-46a7-bdc6-76ed812e0849.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\userpictures\\7009748d-2630-46a7-bdc6-76ed812e0849.png"
+    },
+    {
       "Identity": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\img\\userpictures\\bd25988e-128d-49cb-bc92-cd3606157880.jpg",
       "SourceId": "OnlineBookClub.WEB",
       "SourceType": "Discovered",
@@ -2542,6 +2561,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\userpictures\\DefaultUserPicture.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\event.js",
+      "SourceId": "OnlineBookClub.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\",
+      "BasePath": "_content/OnlineBookClub.WEB",
+      "RelativePath": "js/event.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\event.js"
     },
     {
       "Identity": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\site.js",

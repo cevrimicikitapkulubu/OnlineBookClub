@@ -1,0 +1,46 @@
+﻿@model EventVM 
+
+<!-- Update Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="updateModalLabel">Etkinlik Oluşturma</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form method="post" asp-controller="Event" asp-action="Update">
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="mt-2">
+                                <div class="form-group mb-4">
+                                    <label for="SelectBook" class="form-label">Kitap Seçimi</label>
+                                    <select asp-for="ISBN" class="form-control p-3" id="SelectBook">
+                                        <option value="1ASDF">Nutuk</option>
+                                        <option value="2ASDF">Ateşten Gömlek</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="Title" class="form-label">Başlık</label>
+                                    <input asp-for="Title" class="form-control" placeholder="Başlık" id="Title" />
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="SelectLocation" class="form-label">Lokasyon</label>
+                                    <select asp-for="LocationId" class="form-control p-3" id="SelectLocation">
+                                        <option value="1">Okul Kütüphanesi</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="StartDate" class="form-label">Başlangıç Tarihi</label>
+                                    <input type="date" asp-for="StartDate" value="@DateTime.Now" class="form-control" id="StartDate" />
+                                </div>
+
+                                <input type="submit" class="btn btn-success" value="Değiştir" />
+                            </div>
+                        </div>
+                </form>
+            </div>

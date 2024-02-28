@@ -80,9 +80,9 @@
                     </td>
 
 
-                    <td><button type="button" class="btn btn-danger" data-mdb-ripple-init>Sil</button></td>
+                <td class="Table-Buttons">@Html.ActionLink("Sil", "Delete", new { id = item.Id}, new { @class = "Red-Button", onclick = "return confirm('Gerçekten silmek istiyor musunuz?')" })</td>
 
-                    <td><button type="button" class="btn btn-warning" data-mdb-ripple-init>Değiştir</button></td>
+                <td class="Table-Buttons"><button type="button" class="Red-Button" data-mdb-ripple-init>Değiştir</button></td>
 
             </tr>
             }
@@ -90,3 +90,27 @@
 
         </tbody>
     </table>
+
+<style>
+    .Table-Buttons .Red-Button {
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 60px;
+        border: none;
+        padding: 7px 20px;
+        color: white;
+        background-color: var(--red);
+        margin-top: 7%;
+    }
+
+
+    .White-Button {
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 60px;
+        border: solid 3px var(--red);
+        background-color: white;
+        padding: 7px 20px;
+        color: var(--red);
+    }
+</style>

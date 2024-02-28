@@ -64,3 +64,14 @@ nav ul li a{
 }
 
 /* - |NAV BAR| - */
+
+.Red-Button button{
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 60px;
+    border: none;
+    padding: 11px 24px;
+    color: #ffff;
+    background-color: var(--red);
+    margin-top: 7%;
+}
