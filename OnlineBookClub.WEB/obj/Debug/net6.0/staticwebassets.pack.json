@@ -533,6 +533,14 @@
       "PackagePath": "staticwebassets\\img\\userpictures\\bd25988e-128d-49cb-bc92-cd3606157880.jpg"
     },
     {
+      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\chart1.js",
+      "PackagePath": "staticwebassets\\js\\chart1.js"
+    },
+    {
+      "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\chart2.js",
+      "PackagePath": "staticwebassets\\js\\chart2.js"
+    },
+    {
       "Id": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\OnlineBookClub\\OnlineBookClub.WEB\\wwwroot\\js\\event.js",
       "PackagePath": "staticwebassets\\js\\event.js"
     },

@@ -61,6 +61,24 @@
     </div>
 </div>
 
+<div class="container mt-5">
+    <div class="d-flex gap-5 justify-content-around">
+        <div class="chart">
+            <h2>Aylık Açılan Etkinlik Sayısı</h2>
+            <canvas id="MonthlyEventArea" width="620" height="600"></canvas>
+        </div>
+
+        <div class="chart">
+            <h2>Kullanıcı Cinsiyet Dağılımı</h2>
+            <canvas id="GenderArea" width="620" height="600"></canvas>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="~/js/chart1.js"></script>
+<script src="~/js/chart2.js"></script>
 
 <style>
     .viewbagcard{
@@ -74,5 +92,11 @@
     .viewbagcard h1{
         padding:0px;
         margin:0px;
+    }
+
+    .chart{
+        padding:14px;
+        width:620px;
+        height:600px;
     }
 </style>

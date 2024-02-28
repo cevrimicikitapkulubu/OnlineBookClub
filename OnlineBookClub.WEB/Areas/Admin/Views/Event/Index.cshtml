@@ -142,14 +142,14 @@
                                         <input type="date" asp-for="StartDate" value="@DateTime.Now" class="form-control" id="StartDate"/>
                                     </div>
 
-                                    <input type="submit" class="btn btn-success" value="Oluştur" />
                                 </div>
                             </div>
 
                         </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal Et</button>
+                    <input type="submit" class="Red-Button" value="Oluştur" />
+                    <button type="button" class="White-Button" data-bs-dismiss="modal">İptal Et</button>
                 </div>
             </div>
         </div>
@@ -158,15 +158,14 @@
 </div>
 
  <style>
-    .Table-Buttons .Red-Button {
+.Red-Button {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 18px;
         border-radius: 60px;
         border: none ;
         padding: 7px 20px;
         color: white;
         background-color: var(--red);
-        margin-top: 7%;
     }
 
 
