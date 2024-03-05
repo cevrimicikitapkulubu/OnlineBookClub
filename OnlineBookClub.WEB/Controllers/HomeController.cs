@@ -8,12 +8,14 @@ using System.Diagnostics;
 using System.Security.Claims;
 using OnlineBookClub.WEB.ViewModels.Auth;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Drawing.Text;
+using OnlineBookClub.WEB.Models.DB.Event;
 
 namespace OnlineBookClub.WEB.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> _logger;
 
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
@@ -163,6 +165,49 @@ namespace OnlineBookClub.WEB.Controllers
 		public IActionResult Error()
 		{
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+		}
+
+
+
+
+
+
+
+
+
+
+
+		//CLANDER AREA
+
+
+        private static List<Event> Events;
+        public async Task<IActionResult> Calendar()
+		{
+			Events = new List<Event>();
+
+            foreach (var eventitem in Events)
+            {
+                Events.Add(item: new Event
+                {
+                    Title = eventitem.Title,
+                    StartDate = eventitem.StartDate,
+                });
+            }
+
+			return View();
+
+		}
+
+		[HttpPost]
+		public IActionResult GetData()
+		{
+			var form = HttpContext.Request.Form;
+			var startDate = DateTime.Parse(form["start"]);
+			var endDate = DateTime.Parse(form["end"]);
+
+
+			var filteredList = Events.Where(x=>startDate <= x.StartDate && x.StartDate <= endDate).ToList();
+			return Json(filteredList);
 		}
 	}
 }
