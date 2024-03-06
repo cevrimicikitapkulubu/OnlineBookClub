@@ -296,9 +296,10 @@ body {
   margin-top: 10%;
 }
 
-.slide > .container > .slide-image > img {
-  margin-bottom: 10%;
-}
+    .slide > .container > .slide-image > img {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
 .filter {
   display: flex;
