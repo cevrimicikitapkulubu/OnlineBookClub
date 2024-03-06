@@ -2,44 +2,72 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8' />
+
+    <style>
+        .tooltip{
+            position: absolute;
+            z-index: 10;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            pointer-events: none;
+            /* Ok için */
+            &::after
+            {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-top: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+                transform: rotate(45deg);
+            }
+        }
+
+    </style>
+
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
     <script>
+
+        var rawEvents = @Html.Raw(Json.Serialize((ViewBag.EventsJson)));
+        var eventsSerialized = [];
+        rawEvents.value.forEach(x => {
+            eventsSerialized.push({ title: x.title, description: x.title + " | " + x.time, start: x.startDate });
+        });
+
+        console.log(eventsSerialized)
 
         document.addEventListener('DOMContentLoaded', function() {
           var calendarEl = document.getElementById('calendar');
           var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
                 locale: 'tr',
-              events:[
-                  {
-                      title : 'event1',
-                      start: '2024-05-05'
-                  },
-                    {
-                        title: 'event2',
-                        start: '2024-05-05',
-                        end: '2024-06-05'
-                    }
-              ],
-
-                    eventSources: [
-                    {
-                        url: '/Home/GetData',
-                        method: 'POST',
-                        success: function (response) {
-                            console.log(response);
-                            return response;
-                        },
-                        failure: function () {
-                            alert('there was an error')
-                        }
-                    }
-                ]
+                events: eventsSerialized,
+                eventRender: function (event, element) {
+                    document.querySelector(element).append("<div class='tooltip'>" + event.extendedProps.description + "</div>");
+                },
+                eventClick: function (info) {
+                    console.log("Event clicked:", info.event);
+                },
+                eventMouseEnter: function (event) {
+                    console.log(`Event Mouse Enter: ${event.event._def.extendedProps.description}`);
+                },
+                eventMouseLeave: function (event) {
+                    console.log(`Event Mouse Leave: ${event.event._def.extendedProps.description}`);
+                },
+                eventDidMount: function (event) {
+                    event.el.setAttribute("title", event.event._def.extendedProps.description);
+                },
           });
           calendar.render();
         });
 
     </script>
+
 </head>
 <body>
      <div class="container">

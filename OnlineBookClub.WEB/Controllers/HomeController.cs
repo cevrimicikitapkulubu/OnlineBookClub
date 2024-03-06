@@ -10,6 +10,7 @@ using OnlineBookClub.WEB.ViewModels.Auth;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Drawing.Text;
 using OnlineBookClub.WEB.Models.DB.Event;
+using OnlineBookClub.WEB.ViewModels.Dist;
 
 namespace OnlineBookClub.WEB.Controllers
 {
@@ -180,34 +181,14 @@ namespace OnlineBookClub.WEB.Controllers
 		//CLANDER AREA
 
 
-        private static List<Event> Events;
         public async Task<IActionResult> Calendar()
 		{
-			Events = new List<Event>();
+			List<Event> events = _context.Events.ToList();
 
-            foreach (var eventitem in Events)
-            {
-                Events.Add(item: new Event
-                {
-                    Title = eventitem.Title,
-                    StartDate = eventitem.StartDate,
-                });
-            }
+			ViewBag.EventsJson = Json(events.Select(x => new CalendarVM { Title = x.Title, StartDate = (x.StartDate.Year + "-" + x.StartDate.Month.ToString("00") + "-" + x.StartDate.Day.ToString("00")), Time = x.StartDate.ToString("t") }));
 
 			return View();
 
-		}
-
-		[HttpPost]
-		public IActionResult GetData()
-		{
-			var form = HttpContext.Request.Form;
-			var startDate = DateTime.Parse(form["start"]);
-			var endDate = DateTime.Parse(form["end"]);
-
-
-			var filteredList = Events.Where(x=>startDate <= x.StartDate && x.StartDate <= endDate).ToList();
-			return Json(filteredList);
 		}
 	}
 }
